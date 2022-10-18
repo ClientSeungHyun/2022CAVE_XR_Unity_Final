@@ -1056,6 +1056,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61372263ac5d2ae4795978de334c8ff7, type: 3}
+--- !u!1 &268126498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1545734126785919658, guid: f83201767490c6c4097f0a2499f8d206, type: 3}
+  m_PrefabInstance: {fileID: 800138205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &268126499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268126498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e627c7a1d907b43a1fa047bbfd25c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CenterEyeObj: {fileID: 1186185903}
+  SceneName: ThirdFloor
+--- !u!136 &268126500
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268126498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.7
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &283075574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2311,7 +2344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1545734126785919661, guid: f83201767490c6c4097f0a2499f8d206, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.194
+      value: 2.68
       objectReference: {fileID: 0}
     - target: {fileID: 1545734126785919661, guid: f83201767490c6c4097f0a2499f8d206, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3217,6 +3250,27 @@ Transform:
   m_Father: {fileID: 843742594}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1186185903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1545734128245621030, guid: f83201767490c6c4097f0a2499f8d206, type: 3}
+  m_PrefabInstance: {fileID: 800138205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1186185904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186185903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8e1d778abf442e4bec449c360e9e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 1
+  fadeColor: {r: 0.01, g: 0.01, b: 0.01, a: 1}
+  fadeOnStart: 1
+  renderQueue: 5000
 --- !u!1001 &1237071569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3809,9 +3863,10 @@ GameObject:
   - component: {fileID: 1550010573}
   - component: {fileID: 1550010572}
   - component: {fileID: 1550010571}
+  - component: {fileID: 1550010575}
   m_Layer: 0
   m_Name: stair_nomaterial_trigger
-  m_TagString: Untagged
+  m_TagString: stairTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3827,7 +3882,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1550010572
 MeshRenderer:
@@ -3886,12 +3941,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550010570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.83, y: 0, z: 8.6}
+  m_LocalPosition: {x: -2.59, y: 1.379, z: 8.6}
   m_LocalScale: {x: 4.878058, y: 0.04974087, z: 2.3086586}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1550010575
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550010570}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
 --- !u!1001 &1557211155
 PrefabInstance:
   m_ObjectHideFlags: 0

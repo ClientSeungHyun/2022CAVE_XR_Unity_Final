@@ -7,6 +7,8 @@ TagManager:
   - Item
   - RoomLight
   - Button
+  - item
+  - stairTrigger
   layers:
   - Default
   - TransparentFX

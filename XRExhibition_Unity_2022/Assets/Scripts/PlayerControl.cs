@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         MoveAnim = transform.Find("OVRCameraRig").GetComponent<Animation>();//애니메이션 컴포넌트 호출
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         
     }
 

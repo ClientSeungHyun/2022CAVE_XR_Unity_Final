@@ -21,8 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/ThirdFloor.unity
     guid: 3d9f15702373ee341b73bafafd17c5a1
   - enabled: 1
-    path: Assets/Scenes/Outdoor/LodingScene.unity
-    guid: 1126089a22d07e44d989b8d78883748b
+    path: Assets/Scenes/EndingScene.unity
+    guid: 67798674fcf92074e9102773f0686b3b
+  - enabled: 1
+    path: Assets/Scenes/Outdoor.unity
+    guid: cfbe61dca623d2e4eb87b70ebbbb0cb2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c8b1c1af47fb3ca4aa8d5e1896e9a246, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0d2f4a48cfaa0e34aba29ba940868384, type: 2}

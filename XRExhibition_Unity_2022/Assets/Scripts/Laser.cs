@@ -9,7 +9,7 @@ public class Laser : MonoBehaviour
     private RaycastHit Hit_obj;
 
     private float buttonFloat_L, buttonFloat_R;
-    private bool buttonPush_L, buttonPush_R;
+    private bool buttonPush_L = false, buttonPush_R = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,14 +40,8 @@ public class Laser : MonoBehaviour
             if (Hit_obj.collider.gameObject.CompareTag("Button"))
             {
 
-                //완쪽 컨트롤러가 눌렸을 경우
-                if (buttonPush_L == true)
-                {
-                    //버튼 실행
-                    Hit_obj.collider.gameObject.GetComponent<Button>().onClick.Invoke();
-                }
-                //오른쪽 컨트롤러가 눌렸을 경우
-                if (buttonPush_R == true)
+                //컨트롤러가 눌렸을 경우
+                if (buttonPush_L == true || buttonPush_R == true)
                 {
                     //버튼 실행
                     Hit_obj.collider.gameObject.GetComponent<Button>().onClick.Invoke();
@@ -86,4 +80,6 @@ public class Laser : MonoBehaviour
         }
 
     }
+
+   
 }

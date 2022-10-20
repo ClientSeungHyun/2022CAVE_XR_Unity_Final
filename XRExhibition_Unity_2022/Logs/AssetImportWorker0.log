@@ -1,0 +1,1344 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.37f1 (8c66806a0c04) revision 9201280'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'ko' Physical Memory: 32694 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.37f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/user/Documents/GitHub/2022CAVE_XR_Unity_Final/XRExhibition_Unity_2022
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62171
+Successfully changed project path to: C:/Users/user/Documents/GitHub/2022CAVE_XR_Unity_Final/XRExhibition_Unity_2022
+C:/Users/user/Documents/GitHub/2022CAVE_XR_Unity_Final/XRExhibition_Unity_2022
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 68.79 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.67 ms.
+Initialize engine version: 2020.3.37f1 (8c66806a0c04)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Documents/GitHub/2022CAVE_XR_Unity_Final/XRExhibition_Unity_2022/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   
+    VRAM:     8042 MB
+    Driver:   30.0.14.7212
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002801 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 63.33 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.488 seconds
+Domain Reload Profiling:
+	ReloadAssembly (488ms)
+		BeginReloadAssembly (62ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (369ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (108ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (160ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (60ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008448 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000233C29C2850 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3D7A010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3340830 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Voice.Demo.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3552740 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3DB1A50 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C31EF0A0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2B52010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Interaction.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2B71420 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2CFA030 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2B81430 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EFE4E10 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C319A620 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2E91010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C31EF0A0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3074A30 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2FCFF40 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2ECA420 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.WitAI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3BACE30 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C31EF0A0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C31EF0A0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C43EBA50 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C346C010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EFDF020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3D66A20 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2ECA420 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3C71980 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Samples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C373CEE0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3D66A20 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3B4D820 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C31EC010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F3963F0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C319E830 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.74.0
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Domain Reload Profiling:
+	ReloadAssembly (896ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (689ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (227ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2896 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.8 MB.
+System memory in use after: 142.0 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 3337.
+Total: 2.424000 ms (FindLiveObjects: 0.206000 ms CreateObjectMapping: 0.060700 ms MarkObjects: 2.071500 ms  DeleteObjects: 0.085000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/MenuScript.cs
+  artifactKey: Guid(81251987fc8d88540a7d39cc4d7cacdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuScript.cs using Guid(81251987fc8d88540a7d39cc4d7cacdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67db063fc547376db29da51a69a8a849') in 0.035636 seconds 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 19.08 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 37 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.0 MB.
+System memory in use after: 77.2 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 3337.
+Total: 2.945600 ms (FindLiveObjects: 0.358200 ms CreateObjectMapping: 0.069300 ms MarkObjects: 2.470800 ms  DeleteObjects: 0.046700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 64.580255 seconds.
+  path: Assets/Scripts/MenuScript.cs
+  artifactKey: Guid(81251987fc8d88540a7d39cc4d7cacdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuScript.cs using Guid(81251987fc8d88540a7d39cc4d7cacdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dea03054ee0cc42c280fa959d878154') in 0.003584 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008904 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000233C3565780 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6617030 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F24C460 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Voice.Demo.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C34F8830 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2F99430 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6621440 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C7F50040 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Interaction.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F321010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C7D04030 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6861020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C919F970 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C34F8830 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EE6C030 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EB85FA0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3D7A010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C796B490 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F210020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.WitAI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C76B9E80 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EB85FA0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6621440 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F3CCA20 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EA79020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357ED1D010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3C86770 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2F99430 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6A13B40 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Samples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6AC5030 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EB8A1B0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C7756620 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C9B11980 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C29AD540 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EFE3DA0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.808 seconds
+Domain Reload Profiling:
+	ReloadAssembly (809ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (627ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (233ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 2792 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.6 MB.
+System memory in use after: 132.8 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3341.
+Total: 2.346300 ms (FindLiveObjects: 0.175800 ms CreateObjectMapping: 0.057300 ms MarkObjects: 2.066300 ms  DeleteObjects: 0.045900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008469 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000233C2CD5620 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C36E4010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F24C460 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Voice.Demo.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C4A61030 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F056630 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C7886E50 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EE6C030 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Interaction.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F056630 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2F64410 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C72A0010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CC1F4A30 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C7886E50 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C7679060 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C28A2050 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3D7A010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C72494F0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F056630 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.WitAI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F24C460 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C28A2050 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C7886E50 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C372E640 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6D3D020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000023556575150 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C319D020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2D91020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6A14360 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Samples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6304010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F394BD0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CCFB1F30 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CCDF2670 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F064640 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2CD5620 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.800 seconds
+Domain Reload Profiling:
+	ReloadAssembly (800ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (636ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (202ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (251ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (143ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2792 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.7 MB.
+System memory in use after: 132.9 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3345.
+Total: 2.827600 ms (FindLiveObjects: 0.205200 ms CreateObjectMapping: 0.059100 ms MarkObjects: 2.512200 ms  DeleteObjects: 0.050600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007450 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000233C3C43060 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CD133010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F24C460 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Voice.Demo.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2BB9540 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6990020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2BB9540 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C433B020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Interaction.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6990020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C7FE4010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6218020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EF74020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2BB9540 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C433B020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2BB9540 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3D7A010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CE827B40 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6990020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.WitAI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F24C460 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2BB9540 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2BB9540 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6D79070 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C74D1E40 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CE5090F0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2BBED50 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C658B010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6753780 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Samples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CECB3030 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2E56430 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2E74450 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CCDF35A0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3E47230 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3C43060 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.777 seconds
+Domain Reload Profiling:
+	ReloadAssembly (778ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (614ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (242ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (143ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 2792 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.7 MB.
+System memory in use after: 132.9 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3349.
+Total: 2.314400 ms (FindLiveObjects: 0.172400 ms CreateObjectMapping: 0.067500 ms MarkObjects: 2.028400 ms  DeleteObjects: 0.045500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4637.083568 seconds.
+  path: Assets/Oculus/Platform/Samples/VrVoiceChat/Prefabs/SelectFriendButton.prefab
+  artifactKey: Guid(fbdb46efded3719458a17f55fe1ec7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Platform/Samples/VrVoiceChat/Prefabs/SelectFriendButton.prefab using Guid(fbdb46efded3719458a17f55fe1ec7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e048b18c8fe53be01e919ad58b95698') in 0.059325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Prefabs/Debug/SelectorDebugVisual.prefab
+  artifactKey: Guid(2789b81452a53eb438f0467475526b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Prefabs/Debug/SelectorDebugVisual.prefab using Guid(2789b81452a53eb438f0467475526b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a902281d6b3d7c5a8613b3e2d7d5283b') in 0.051348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Oculus/VR/Materials/SelectionRay.mat
+  artifactKey: Guid(02f4d91e963f1e74d8bee0002c24efe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Materials/SelectionRay.mat using Guid(02f4d91e963f1e74d8bee0002c24efe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6daecb0d194fe7a90923247522328e7') in 0.067146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectiveMask.tga
+  artifactKey: Guid(eae0c2336ae2460479ab7fab94fdbba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectiveMask.tga using Guid(eae0c2336ae2460479ab7fab94fdbba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef5edef45f5c4f2227c140a908f2a1d') in 0.020620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthroughHands.mat
+  artifactKey: Guid(b711286d46553614c8f4e2f88af54316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthroughHands.mat using Guid(b711286d46553614c8f4e2f88af54316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065e11047edde33ee6bdb03224026d73') in 0.041639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/SelectionCylinder.fbx
+  artifactKey: Guid(f167bd156a4b5ff4faf061ab4ce336cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/SelectionCylinder.fbx using Guid(f167bd156a4b5ff4faf061ab4ce336cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd772cb11f960bf5755ae503efe1aa3fa') in 0.077715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/selection_cylinder_filled.png
+  artifactKey: Guid(5e00d9c6ac492e447b6f74beeadcd1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/selection_cylinder_filled.png using Guid(5e00d9c6ac492e447b6f74beeadcd1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a129224986faf811d06b5443f19947ea') in 0.057801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SelectionCylinderBase.mat
+  artifactKey: Guid(12d9a49768b575643a552c2ce6fdc26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SelectionCylinderBase.mat using Guid(12d9a49768b575643a552c2ce6fdc26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac364ac1add87235b8a3802147f73ca7') in 0.016709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthroughSoft.mat
+  artifactKey: Guid(ddbf76a20fa22a14a83e42283bde1eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthroughSoft.mat using Guid(ddbf76a20fa22a14a83e42283bde1eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e82a13572e388492da1525269eeedc') in 0.043067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SelectionCylinder.mat
+  artifactKey: Guid(31cce59a5784d22409cb8fc86a99f275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/SelectionCylinder.mat using Guid(31cce59a5784d22409cb8fc86a99f275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1512fea8039c7be700962dfef3426a81') in 0.016001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/selection_cylinder.png
+  artifactKey: Guid(2fef2bbdf32555342ad350ddd7e73d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Textures/selection_cylinder.png using Guid(2fef2bbdf32555342ad350ddd7e73d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b1ae211bbdcb35b2c6529cacd4eeb7') in 0.024310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthroughHandsSoft.mat
+  artifactKey: Guid(9ac2dd4377e3574419fe3770f75af95a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthroughHandsSoft.mat using Guid(9ac2dd4377e3574419fe3770f75af95a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a978296b9d403106d521a2939dfaddf') in 0.025613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Prefabs/SelectionCylinder.prefab
+  artifactKey: Guid(5796fdce600ca1746a6ce01aed7026fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Prefabs/SelectionCylinder.prefab using Guid(5796fdce600ca1746a6ce01aed7026fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '068d7f83ec02b4dde1f7805796b214b1') in 0.011816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthrough.mat
+  artifactKey: Guid(f7f0c9cf841119946914d0d30670867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SelectivePassthrough.mat using Guid(f7f0c9cf841119946914d0d30670867a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebbca7d99b0cf0068a0c05c7fce34188') in 0.015260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.564642 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/SelectionCylinder.cs
+  artifactKey: Guid(6d778f6e8fb868247b9f0c8ef05dfe41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/SelectionCylinder.cs using Guid(6d778f6e8fb868247b9f0c8ef05dfe41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bfe7cdb928c151056fdcc00db19d8d0') in 0.003263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 436.798462 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/TrainPalette.FBX
+  artifactKey: Guid(bd0bb729cb6159b4ab21c5f62cad24ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/TrainPalette.FBX using Guid(bd0bb729cb6159b4ab21c5f62cad24ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6f008a7a194931a9e396df7bf4f5a4') in 0.561757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Oculus/LipSync/Models/RobotHead_TextureFlip/aa.png
+  artifactKey: Guid(5c06354455999f94ea26114e261dde6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/LipSync/Models/RobotHead_TextureFlip/aa.png using Guid(5c06354455999f94ea26114e261dde6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06848d844f084d7e8aa45458eecace8f') in 0.015071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/ControllerBox.FBX
+  artifactKey: Guid(6ea491f82329b774d8b8af4a409d8d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Models/ControllerBox.FBX using Guid(6ea491f82329b774d8b8af4a409d8d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a521fd7e92adca710eea393ce83c165') in 0.121508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.458961 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Prefabs/DistanceHandGrab/ControllerDistanceGrabInteractor.prefab
+  artifactKey: Guid(86f711b02960d794b8c4ad0bcbf17527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Prefabs/DistanceHandGrab/ControllerDistanceGrabInteractor.prefab using Guid(86f711b02960d794b8c4ad0bcbf17527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf8257e45402febd546d3ffd56e79d3') in 0.019951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.882237 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Prefabs/Grab/ControllerGrabInteractor.prefab
+  artifactKey: Guid(bc242319e5f2bd842999ab7665ad2d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Prefabs/Grab/ControllerGrabInteractor.prefab using Guid(bc242319e5f2bd842999ab7665ad2d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08cc6358358f5bc711f340c333f4472a') in 0.022402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Oculus/Interaction/Runtime/Prefabs/Poke/ControllerPokeInteractor.prefab
+  artifactKey: Guid(caf1104dfe6d01c4e9dabd59f18e535a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/Prefabs/Poke/ControllerPokeInteractor.prefab using Guid(caf1104dfe6d01c4e9dabd59f18e535a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5dcc0dabf5b7c9084ceac63c97254f2') in 0.016014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.177457 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGestures_SwipeForward_01.wav
+  artifactKey: Guid(152aafa4bc75a894f80f0da543555c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGestures_SwipeForward_01.wav using Guid(152aafa4bc75a894f80f0da543555c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c8ed5f3d090a77d2a154956fddbbb54') in 0.050827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_01.wav
+  artifactKey: Guid(ba24ea69ea5a83349b560a6d0abcef47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_01.wav using Guid(ba24ea69ea5a83349b560a6d0abcef47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '437da5b03469909a3e3785d717691450') in 0.038088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_03.wav
+  artifactKey: Guid(5d75990ed604109429ae282bde2c21f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_03.wav using Guid(5d75990ed604109429ae282bde2c21f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f1fa12de37a68aaafacd06b7cee18e') in 0.068189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_02.wav
+  artifactKey: Guid(cbaf8af418050074d94500378f012f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_02.wav using Guid(cbaf8af418050074d94500378f012f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec62c473e16de1ea672dfb231ea56d0c') in 0.014527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.268020 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_04.wav
+  artifactKey: Guid(1bd60f4e4774c97469bd13aad8a14735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_04.wav using Guid(1bd60f4e4774c97469bd13aad8a14735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1f85699bb2624e277621bc26aac82fa') in 0.022518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_05.wav
+  artifactKey: Guid(5e44ad0f498709b458e0b33478e5c161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_05.wav using Guid(5e44ad0f498709b458e0b33478e5c161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6f460905ba4d4c08a74be99e22f039') in 0.013860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_01.wav
+  artifactKey: Guid(01ee74389d1a6844c9250d4230e734d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_01.wav using Guid(01ee74389d1a6844c9250d4230e734d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02faf4c6fdbdf5037e662764d3824327') in 0.014483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_02.wav
+  artifactKey: Guid(c778383a4f7517444bceb89ec51cc4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_02.wav using Guid(c778383a4f7517444bceb89ec51cc4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ddf801d95cc5c888346f5e095b14013') in 0.015861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.302128 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_03.wav
+  artifactKey: Guid(699db85e81c57234f80d2c1d665c0a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_03.wav using Guid(699db85e81c57234f80d2c1d665c0a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aeaeb442db79d28ec4e20f0281f4477') in 0.022299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_05.wav
+  artifactKey: Guid(c50c15daa22b036448a23aa43ec3381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_05.wav using Guid(c50c15daa22b036448a23aa43ec3381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16eed83751cfe2ecba3be5090872507d') in 0.014212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_04.wav
+  artifactKey: Guid(72e37686c6837804ab84e2f347c8e3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_04.wav using Guid(72e37686c6837804ab84e2f347c8e3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24ad2db7265e0d07cda990f632d862f') in 0.014387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_01.wav
+  artifactKey: Guid(b684caa52b59fdf4a8b0b0436f92268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_01.wav using Guid(b684caa52b59fdf4a8b0b0436f92268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c557836e6642d2a03c0f7db25cb80f') in 0.013959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ButtonPress.wav
+  artifactKey: Guid(56fe077fa3d84f24c951589f5d187be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ButtonPress.wav using Guid(56fe077fa3d84f24c951589f5d187be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db5b7d58c57206bc93199e6980c13a6') in 0.014891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ButtonRelease.wav
+  artifactKey: Guid(aebed88a33938c74f80e53b1386c2034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ButtonRelease.wav using Guid(aebed88a33938c74f80e53b1386c2034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e3303b42a15bcfa0b9f39f7941c08c') in 0.013835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_02.wav
+  artifactKey: Guid(9e6b15717caa4bd4c89c44dc2ae6108c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_02.wav using Guid(9e6b15717caa4bd4c89c44dc2ae6108c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09992127171d8015ffe9f5e38e5a4255') in 0.014247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_03.wav
+  artifactKey: Guid(94b72b7e55617a048a8468e9ac572290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_03.wav using Guid(94b72b7e55617a048a8468e9ac572290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9912a03e96104d428c59fd55b10108f9') in 0.013432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.243155 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_04.wav
+  artifactKey: Guid(b8f580cf675c83e4086b7b858613cb22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_04.wav using Guid(b8f580cf675c83e4086b7b858613cb22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf60c2f8e06818d8d37cb5391531a25') in 0.022483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_05.wav
+  artifactKey: Guid(061eee0218cd9a5448e78cfe72eaebfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_05.wav using Guid(061eee0218cd9a5448e78cfe72eaebfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfee32235d1d199b95a23549230c6bae') in 0.014794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009492 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_06.wav
+  artifactKey: Guid(9ef66d69357ce984099c0573a74b624d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_06.wav using Guid(9ef66d69357ce984099c0573a74b624d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bd79aa299b6e827878725406682ef1') in 0.015630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_09.wav
+  artifactKey: Guid(b38b26d07f7435f43a1179467c7deacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_09.wav using Guid(b38b26d07f7435f43a1179467c7deacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ea9724f1921ecb128f98faa9bb24e8') in 0.013906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_08.wav
+  artifactKey: Guid(3c7d77ef6bc7ea342982df2dd40208a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_08.wav using Guid(3c7d77ef6bc7ea342982df2dd40208a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc830c8ff9cf28981adbf9b3887f199') in 0.014009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_07.wav
+  artifactKey: Guid(ba53110248aaf894aa2310ce615e6eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_07.wav using Guid(ba53110248aaf894aa2310ce615e6eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db1a8d6f61e77e04a5465e8c7668fcb') in 0.013408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.210560 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_01.wav
+  artifactKey: Guid(9c7f85ce3536b3b4c89aa4bd0db96665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_01.wav using Guid(9c7f85ce3536b3b4c89aa4bd0db96665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d5c91e1d03130f045e6d82f88409dc') in 0.023674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_01.wav
+  artifactKey: Guid(1cb50a7de0f9f954b8b0c331fe898a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_01.wav using Guid(1cb50a7de0f9f954b8b0c331fe898a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fec3d66aaa1c9ecb1f62e34789c9252') in 0.015000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_03.wav
+  artifactKey: Guid(ef4f51c9b55aa174e96e815bd0e7cbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_03.wav using Guid(ef4f51c9b55aa174e96e815bd0e7cbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d60f62ea383aa0692e4d0c27b67b969') in 0.015673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Hover.wav
+  artifactKey: Guid(1310bd00360df084e96ccc9a42f601b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Hover.wav using Guid(1310bd00360df084e96ccc9a42f601b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8629dd1a3a3b2236a093d997b2563187') in 0.015626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_02.wav
+  artifactKey: Guid(9c588f7a6c8d16142bd78690b1f36fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_02.wav using Guid(9c588f7a6c8d16142bd78690b1f36fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2549340d5442a646dc867f14c478c83e') in 0.015202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_02.wav
+  artifactKey: Guid(2ed5105a8954bb84186243c8ac778daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_02.wav using Guid(2ed5105a8954bb84186243c8ac778daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f25bfe61c8b97ed78a0326b80ac686') in 0.015605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_03.wav
+  artifactKey: Guid(354b04977aec15c42819ef6947075146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_03.wav using Guid(354b04977aec15c42819ef6947075146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0e51a8f917515d89a49bc8ff34cfe0') in 0.014635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Back.wav
+  artifactKey: Guid(4393389c4e9969940bfda2dc7f786204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Back.wav using Guid(4393389c4e9969940bfda2dc7f786204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817e9ecb1c621cad18f7b16bda7b2a20') in 0.015184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.166089 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Press.wav
+  artifactKey: Guid(0ae074243bcbf57468d433ad4f78acbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Press.wav using Guid(0ae074243bcbf57468d433ad4f78acbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55598ea06d152703b2a2e66a655287e5') in 0.014644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Release.wav
+  artifactKey: Guid(2786b7a027507264ebaad5d1bf1cd1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Release.wav using Guid(2786b7a027507264ebaad5d1bf1cd1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14133719c4ed497ab260b3eb4738c752') in 0.015059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_02.wav
+  artifactKey: Guid(87ea10243c060994e963520e19099c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_02.wav using Guid(87ea10243c060994e963520e19099c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e753dccb39bf06f90d78be1d2ad0769c') in 0.014794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_03.wav
+  artifactKey: Guid(1d7fb3c7a39fe574798cf3697c8204fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_03.wav using Guid(1d7fb3c7a39fe574798cf3697c8204fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d65b56137130e3b868b1fbc5f54d721') in 0.013871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_01.wav
+  artifactKey: Guid(25a99cec3fc16184490a8fbfe21d1528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_01.wav using Guid(25a99cec3fc16184490a8fbfe21d1528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf81acbf2d0217c5f0da721849052d54') in 0.014254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxOpen_01.wav
+  artifactKey: Guid(016209c384f7c0748b3cc19f7b2ded43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxOpen_01.wav using Guid(016209c384f7c0748b3cc19f7b2ded43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98d632e95ca56b8e82c895417c43d59') in 0.014583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxOpen_02.wav
+  artifactKey: Guid(7af8171318058a144bc1208ad2f60abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxOpen_02.wav using Guid(7af8171318058a144bc1208ad2f60abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b47004d9a9354841c9611aa8acba107') in 0.013959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_CameraTool_Shutter_01.wav
+  artifactKey: Guid(d009b2948655d054d8f4b6c17607d08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_CameraTool_Shutter_01.wav using Guid(d009b2948655d054d8f4b6c17607d08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98bd4212dadf1a595ce5fc4f9f7f96d0') in 0.013837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.923593 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxOpen_03.wav
+  artifactKey: Guid(2a3a28423ef0779459533afedeee12cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxOpen_03.wav using Guid(2a3a28423ef0779459533afedeee12cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ae0945b2dec3b7c890652f87d94547') in 0.023448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_01.wav
+  artifactKey: Guid(f9d3d78b93262df46b15e931d171f693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_01.wav using Guid(f9d3d78b93262df46b15e931d171f693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cdd3155212a0ba8acb3c3f1a137dfdf') in 0.014844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_02.wav
+  artifactKey: Guid(2cb38d6272069334da3b06fb6d75c673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_02.wav using Guid(2cb38d6272069334da3b06fb6d75c673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ae05b8e2b32eb7cc9ebb58d6acd137') in 0.025975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_06.wav
+  artifactKey: Guid(08910b7f127a61644811e5cda32f09a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_06.wav using Guid(08910b7f127a61644811e5cda32f09a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59d5f720479d4af6172a79de3a04583') in 0.021524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_05.wav
+  artifactKey: Guid(07b5938cd1fd49c4999aa1b2b6b398eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_05.wav using Guid(07b5938cd1fd49c4999aa1b2b6b398eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de703db4e19ff8af9a4e1f0094cbcce') in 0.014337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_07.wav
+  artifactKey: Guid(7c0de7743a99e16458d6b4b9d5bf49a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_07.wav using Guid(7c0de7743a99e16458d6b4b9d5bf49a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd229a05b0984aff35c4c414679ca0e') in 0.014708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_09.wav
+  artifactKey: Guid(52648979e5d298240a12915b9ed6c503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_09.wav using Guid(52648979e5d298240a12915b9ed6c503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c701894af6e35bf97bd55376b6c16e3') in 0.014691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Resize_01.wav
+  artifactKey: Guid(deddf0b6994a9b543a2b4ffd829e8cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Resize_01.wav using Guid(deddf0b6994a9b543a2b4ffd829e8cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa59afffe8c10b7b72fa1c9cc94d715') in 0.014595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_10.wav
+  artifactKey: Guid(f454930b04fc250499041f61ada9e39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_10.wav using Guid(f454930b04fc250499041f61ada9e39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11fa9c6f588b8d8b0a340883b14f22ff') in 0.028701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_11.wav
+  artifactKey: Guid(3c95fd7328ce55b42901d3ededf06b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_11.wav using Guid(3c95fd7328ce55b42901d3ededf06b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb11de4bce9c84cf12a624b75b3c420') in 0.014292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_01.wav
+  artifactKey: Guid(33504eb0b3cd875429958bc67b832de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_01.wav using Guid(33504eb0b3cd875429958bc67b832de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7df7edfb7a63fc12ccb6bd3de24005') in 0.016257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_01.wav
+  artifactKey: Guid(21ddc34a9e2a4184884d0ac0d16e5a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_01.wav using Guid(21ddc34a9e2a4184884d0ac0d16e5a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709f8aa435c907f3eb7b4850af4a3f4a') in 0.016255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_02.wav
+  artifactKey: Guid(09261974b330663419f6e892d56cee88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_02.wav using Guid(09261974b330663419f6e892d56cee88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd77f6c1ed693a1730e9e819cec759e') in 0.016422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_02.wav
+  artifactKey: Guid(a988f805ead2c9f4db2a2956cf3555f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_02.wav using Guid(a988f805ead2c9f4db2a2956cf3555f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4756d98289cb9b17c87f2893a28c6fce') in 0.016976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_01.wav
+  artifactKey: Guid(e37b07310ea895b42aab47a925469ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_01.wav using Guid(e37b07310ea895b42aab47a925469ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae90460f62ded5172a003dfb9bb48f80') in 0.014979 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_02.wav
+  artifactKey: Guid(46ea7610960363c418d8f456b08b9cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_02.wav using Guid(46ea7610960363c418d8f456b08b9cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1b0d4d038e93479c99b8d3c7528d6e') in 0.015004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Oculus/Interaction/Editor/Oculus.Interaction.Editor.asmdef
+  artifactKey: Guid(48af58ae5328ff048acacd924604a804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Editor/Oculus.Interaction.Editor.asmdef using Guid(48af58ae5328ff048acacd924604a804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40cba554325dd019ff48d2258340e5d') in 0.009596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Oculus/Interaction/Samples/Oculus.Interaction.Samples.asmdef
+  artifactKey: Guid(aad0989a2d3885f4e8846b6f0609300c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Oculus.Interaction.Samples.asmdef using Guid(aad0989a2d3885f4e8846b6f0609300c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6423754fb7cc322a3fdf4e8845159c24') in 0.006199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSamplePokeButton.prefab
+  artifactKey: Guid(323cb65d2594c79499a11a99ff0fb347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSamplePokeButton.prefab using Guid(323cb65d2594c79499a11a99ff0fb347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d3558e3ecc87ee04bfda9e776c03fd') in 0.110759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSamplesRayCanvas.prefab
+  artifactKey: Guid(afb1615dd3b243a449003594175d971a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSamplesRayCanvas.prefab using Guid(afb1615dd3b243a449003594175d971a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847d9ee8f1e24d3f175769b81799c62c') in 0.050812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_02.wav
+  artifactKey: Guid(ac747ae94ae63b14da0640929cb8cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_02.wav using Guid(ac747ae94ae63b14da0640929cb8cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81f4a5640605658af6342f64f72871a') in 0.015935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_03.wav
+  artifactKey: Guid(c3ea51fe00965254cb5625d550ec777a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_03.wav using Guid(c3ea51fe00965254cb5625d550ec777a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4e47cc300357a9344690e26284116c') in 0.015289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_02.wav
+  artifactKey: Guid(7774adc1dddd0814380db576766b7efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_02.wav using Guid(7774adc1dddd0814380db576766b7efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66865b0fbfee4175507828f5a7022c45') in 0.015019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSampleRig.prefab
+  artifactKey: Guid(f39a9d103c4129b42a53567f6cd8356a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSampleRig.prefab using Guid(f39a9d103c4129b42a53567f6cd8356a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffa3f1b7a8f5ad3a2804d5bf3a7a991f') in 0.153226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_04.wav
+  artifactKey: Guid(41204675ff2e12043b892e8f671541eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_04.wav using Guid(41204675ff2e12043b892e8f671541eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68ae85314cf20f0018040fa81848c54') in 0.015916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_03.wav
+  artifactKey: Guid(9b19288dd66a54a4eb7774dd05c2a328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_03.wav using Guid(9b19288dd66a54a4eb7774dd05c2a328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9183cce80e36197d846a6a24ea0d19ca') in 0.015223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Reappear_01.wav
+  artifactKey: Guid(44420cc82247b8c41b2a11399c3dda75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Reappear_01.wav using Guid(44420cc82247b8c41b2a11399c3dda75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '329ef879ce400f3b25b18ea8c8d430b2') in 0.014071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Oculus/Interaction/Samples/Prefabs/InteractionRigOVR-Basic.prefab
+  artifactKey: Guid(c89b2c4e711f8a14ba3df7e4b3c71f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Prefabs/InteractionRigOVR-Basic.prefab using Guid(c89b2c4e711f8a14ba3df7e4b3c71f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef54acc6d19f942764dd24e8028c6dc1') in 0.052731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_03.wav
+  artifactKey: Guid(11f00901e96c8d34687e2b184c356f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_03.wav using Guid(11f00901e96c8d34687e2b184c356f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73697ba503faa883cdcd89e89c1b710a') in 0.014966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Oculus/Interaction/Samples/Prefabs/InteractionRigOVR-FullSynthetic.prefab
+  artifactKey: Guid(d93b7e04b48cd7b4fa849695dba2ce9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Prefabs/InteractionRigOVR-FullSynthetic.prefab using Guid(d93b7e04b48cd7b4fa849695dba2ce9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba1be49518e31076d2c323e7c20740a') in 0.097922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_01.wav
+  artifactKey: Guid(0d5bc27cc53f12b4c9ae2d4e8bc8fd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_01.wav using Guid(0d5bc27cc53f12b4c9ae2d4e8bc8fd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680393fd174bdbc409d02af696069b28') in 0.015021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Pull.wav
+  artifactKey: Guid(fbedf1b2a14410642b76da03d6d664f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Pull.wav using Guid(fbedf1b2a14410642b76da03d6d664f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c92c7dc57370322e8d87cac0968964') in 0.013861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Unhover.wav
+  artifactKey: Guid(313d3ca4b490fdd4db2f077f19fb883c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Unhover.wav using Guid(313d3ca4b490fdd4db2f077f19fb883c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5f099bf02853847f7ffbb7ae9685b2') in 0.015634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_03.wav
+  artifactKey: Guid(05069c5421bd2de43aaae9a9d2df1099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_03.wav using Guid(05069c5421bd2de43aaae9a9d2df1099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f1915f900f03ee5153da4fa6bf97f46') in 0.016711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Paper_03.wav
+  artifactKey: Guid(eec1a4e0cb9cf3d4a881837e7a165919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Paper_03.wav using Guid(eec1a4e0cb9cf3d4a881837e7a165919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a773db140e4cef78b01cfcad070b03a') in 0.017266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSamplesButtonMenu.prefab
+  artifactKey: Guid(9fa307f5b777a3144a94cb355e43bf43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Prefabs/OculusInteractionSamplesButtonMenu.prefab using Guid(9fa307f5b777a3144a94cb355e43bf43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40db86e4b2f79cd83b0e99529147525e') in 0.038835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_08.wav
+  artifactKey: Guid(b52bcbc955bfb7b4b866604115d42e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_08.wav using Guid(b52bcbc955bfb7b4b866604115d42e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c5e1dd89bfcfd91c5fe12c57b50c73') in 0.014749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Oculus/Interaction/Runtime/ThirdParty/InterfaceSupport/Editor/Oculus.Interaction.InterfaceSupport.asmdef
+  artifactKey: Guid(62f0806efa855234fa40d98ad397e1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Runtime/ThirdParty/InterfaceSupport/Editor/Oculus.Interaction.InterfaceSupport.asmdef using Guid(62f0806efa855234fa40d98ad397e1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0932c9cfffcd454f14e164f156e1da49') in 0.005459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Paper_02.wav
+  artifactKey: Guid(804545687cb242649ae26f9c2eb148d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Paper_02.wav using Guid(804545687cb242649ae26f9c2eb148d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bff23f4fc631d15577916229009d0e8') in 0.014253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Paper_01.wav
+  artifactKey: Guid(9f1b0ba010bb58443ab64607dd1c24de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Paper_01.wav using Guid(9f1b0ba010bb58443ab64607dd1c24de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a124365aa478aa7bed8e3c443768892f') in 0.016228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_01.wav
+  artifactKey: Guid(35700466f1688cb488905b1899b92552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_01.wav using Guid(35700466f1688cb488905b1899b92552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee64f9a474b502f18a0cabf42d44cc1') in 0.014468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Oculus/Interaction/Samples/Scripts/HandGrabRecord/Editor/Oculus.Interaction.Samples.Editor.asmdef
+  artifactKey: Guid(0ae31ae32e3e80a48806ef598d17341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Scripts/HandGrabRecord/Editor/Oculus.Interaction.Samples.Editor.asmdef using Guid(0ae31ae32e3e80a48806ef598d17341c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50caa0c7e24293b6057128d1d79bf9ee') in 0.005370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_03.wav
+  artifactKey: Guid(7f1459cc291cebf46b6a654b2530e93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_03.wav using Guid(7f1459cc291cebf46b6a654b2530e93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27acd93a744ab3e0629279c0fad7f1c6') in 0.014176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Hover.wav
+  artifactKey: Guid(1ec345b9b29f7be4a9844256d11985e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Hover.wav using Guid(1ec345b9b29f7be4a9844256d11985e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd3d7ec96929efc3837b13d8eb553c3') in 0.014964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_03.wav
+  artifactKey: Guid(4eb7c76586f55214595478557cf00925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_03.wav using Guid(4eb7c76586f55214595478557cf00925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35299642cf6d71fef68edee5b573bf3b') in 0.015243 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.041457 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000233C30A2360 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2844020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6497430 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Voice.Demo.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C83BCDC0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357F15B010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CA840080 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2B52010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Oculus.Interaction.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2E6A040 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6DBB020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C31E3050 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EF75850 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C67FB020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C719C020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357ED08020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3D7A010 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6609A00 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C64A9050 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.WitAI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6497430 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357ED08020 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C83475B0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C8973660 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EB8CEA0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CE5050B0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6497430 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Management.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C2E6A040 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C34B8F20 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Samples.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233CA1080D0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C6497430 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\VoiceSDK.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002357EFE07C0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C3C192D0 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C8356100 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Unity.XR.Oculus.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000233C30A2360 doesn't match image C:\Users\user\Documents\GitHub\2022CAVE_XR_Unity_Final\XRExhibition_Unity_2022\Library\ScriptAssemblies\Facebook.Wit.TTS.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.707 seconds
+Domain Reload Profiling:
+	ReloadAssembly (708ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (553ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (175ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (218ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 2792 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.1 MB.
+System memory in use after: 152.4 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3407.
+Total: 2.363300 ms (FindLiveObjects: 0.158800 ms CreateObjectMapping: 0.067500 ms MarkObjects: 2.082900 ms  DeleteObjects: 0.053700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

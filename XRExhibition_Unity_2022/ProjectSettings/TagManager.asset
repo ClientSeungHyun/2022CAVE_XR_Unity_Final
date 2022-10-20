@@ -9,6 +9,10 @@ TagManager:
   - Button
   - item
   - stairTrigger
+  - Second
+  - First
+  - Thrid
+  - Door
   layers:
   - Default
   - TransparentFX

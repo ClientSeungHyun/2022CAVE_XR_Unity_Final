@@ -29,6 +29,7 @@ public class HandControler : MonoBehaviour
         if (Leftf > 0.9)
         {
             isLeftGrab = true;    //버튼 눌리면 true로
+            print("asdf");
         }
         else if(Rightf > 0.9)
         {
@@ -50,6 +51,15 @@ public class HandControler : MonoBehaviour
                 Destroy(other.gameObject);  //물건 삭제
             }
            
+        }
+        if(other.gameObject.tag == "Door")
+        {
+            print("닿음");
+            if (isRightGrab == true || isLeftGrab == true)
+            {
+                other.transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+
         }
     }
 }

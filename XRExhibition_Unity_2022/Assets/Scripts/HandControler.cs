@@ -7,6 +7,7 @@ public class HandControler : MonoBehaviour
     private float Leftf,Rightf;
     private bool isLeftGrab;
     private bool isRightGrab;
+    public GameObject door;
 
     private void Awake()
     {
@@ -18,6 +19,8 @@ public class HandControler : MonoBehaviour
     void Update()
     {
         GrabCheck();
+        if (Input.GetKeyDown(KeyCode.Space))
+            door.transform.eulerAngles = new Vector3(0, 180, 0);
     }
 
 
@@ -54,10 +57,9 @@ public class HandControler : MonoBehaviour
         }
         if(other.gameObject.tag == "Door")
         {
-            print("¥Í¿Ω");
             if (isRightGrab == true || isLeftGrab == true)
             {
-                other.transform.rotation = Quaternion.Euler(0, 180, 0);
+                door.transform.eulerAngles = new Vector3(0, 180, 0);
             }
 
         }

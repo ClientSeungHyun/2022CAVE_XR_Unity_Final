@@ -7,6 +7,8 @@ public class HandControler : MonoBehaviour
     private float Leftf,Rightf;
     private bool isLeftGrab;
     private bool isRightGrab;
+    public GameObject door;
+    static bool getKey=false;
 
     private void Awake()
     {
@@ -18,6 +20,8 @@ public class HandControler : MonoBehaviour
     void Update()
     {
         GrabCheck();
+        if (Input.GetKeyDown(KeyCode.Space))
+            door.transform.eulerAngles = new Vector3(0, 180, 0);
     }
 
 
@@ -29,6 +33,7 @@ public class HandControler : MonoBehaviour
         if (Leftf > 0.9)
         {
             isLeftGrab = true;    //버튼 눌리면 true로
+           // print("asdf");
         }
         else if(Rightf > 0.9)
         {
@@ -42,14 +47,34 @@ public class HandControler : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Item")  //Item tag인 것만 부딪혔을때 작동
+        /* if(other.gameObject.tag == "Item")  //Item tag인 것만 부딪혔을때 작동
+         {
+
+             if(isRightGrab == true || isLeftGrab == true)
+             {
+                 Destroy(other.gameObject);  //물건 삭제
+             }
+
+         }*/
+        if (isRightGrab == true || isLeftGrab == true)
         {
-           
-            if(isRightGrab == true || isLeftGrab == true)
+            if (other.gameObject.tag == "Key")  //Item tag인 것만 부딪혔을때 작동
             {
+                getKey = true;
                 Destroy(other.gameObject);  //물건 삭제
             }
-           
+            if (other.gameObject.tag == "Door")
+            {
+                if(getKey == true)
+                {
+                    door.transform.eulerAngles = new Vector3(0, 180, 0);
+                    getKey = false;
+                }
+
+            }
+
         }
     }
+           
 }
+

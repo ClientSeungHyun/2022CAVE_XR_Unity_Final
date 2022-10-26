@@ -7,6 +7,13 @@ TagManager:
   - Item
   - RoomLight
   - Button
+  - item
+  - stairTrigger
+  - Second
+  - First
+  - Thrid
+  - Door
+  - Key
   layers:
   - Default
   - TransparentFX

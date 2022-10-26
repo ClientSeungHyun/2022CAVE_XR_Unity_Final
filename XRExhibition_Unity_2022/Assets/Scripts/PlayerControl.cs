@@ -9,7 +9,7 @@ public class PlayerControl : MonoBehaviour
     private Animation MoveAnim; //애니메이션 변수 
 
     private float gravity = -9.8f;
-
+    private string sceneName;
     public bool isground;
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class PlayerControl : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         MoveAnim = transform.Find("OVRCameraRig").GetComponent<Animation>();//애니메이션 컴포넌트 호출
         DontDestroyOnLoad(this);
-        
+
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class PlayerControl : MonoBehaviour
         UseGravity();
         WalkShake();
     }
-   
+
     public void UseGravity()
     {
         isground = characterController.isGrounded;
@@ -49,19 +49,44 @@ public class PlayerControl : MonoBehaviour
             }
             if (thumbstick.x > 0)//오른쪽 조이스틱 움직임
             {
-                MoveAnim.Play("camera_move");//애니메이션 재생 
+
             }
             if (thumbstick.y < 0)//아래 조이스틱 움직임
             {
-                MoveAnim.Play("camera_move");//애니메이션 재생 
+
             }
             if (thumbstick.y > 0)//위 조이스틱 움직임
             {
-                MoveAnim.Play("camera_move");//애니메이션 재생 
+
             }
 
         }
     }
 
+    IEnumerator changeScene()
+    {
+        yield return new WaitForSeconds(1.0f);//FadeOut될동안 3초 딜레이 
+        LodingSceneControlScr.LoadScene(sceneName);//씬 로드 
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "First")
+        {
+            sceneName = "FirstFloor";
+            StartCoroutine(changeScene());
+        }
+        if (other.tag == "Second")
+        {
+            sceneName = "SecondFloor";
+            StartCoroutine(changeScene());
+        }
+        if (other.tag == "Third")
+        {
+            sceneName = "ThirdFloor";
+            StartCoroutine(changeScene());
+        }
+        
+
+    }
 }

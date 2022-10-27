@@ -6003,6 +6003,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1862544423}
     - target: {fileID: 1545734126785919660, guid: f83201767490c6c4097f0a2499f8d206, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1545734126785919660, guid: f83201767490c6c4097f0a2499f8d206, type: 3}
       propertyPath: rightHand
       value: 
       objectReference: {fileID: 1862544422}

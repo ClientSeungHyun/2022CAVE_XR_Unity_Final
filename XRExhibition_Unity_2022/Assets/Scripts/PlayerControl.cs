@@ -20,10 +20,12 @@ public class PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        leftHand = GetComponent<HandControler>();
-        rightHand = GetComponent<HandControler>();
         characterController = GetComponent<CharacterController>();
+        leftHand = transform.Find("CustomHandLeft").GetComponent<HandControler>();
+        rightHand = transform.Find("CustomHandRight").GetComponent<HandControler>();
+        
         MoveAnim = transform.Find("OVRCameraRig").GetComponent<Animation>();//애니메이션 컴포넌트 호출
+       
         DontDestroyOnLoad(this);
         isHaveKey = false;
 
@@ -32,6 +34,7 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print(characterController);
         setKey();
 
         UseGravity();
@@ -55,6 +58,7 @@ public class PlayerControl : MonoBehaviour
 
     public void UseGravity()
     {
+        //print(characterController);
         isground = characterController.isGrounded;
         if (characterController.isGrounded == false)
         {

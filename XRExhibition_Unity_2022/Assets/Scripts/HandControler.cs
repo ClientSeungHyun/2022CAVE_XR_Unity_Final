@@ -8,7 +8,7 @@ public class HandControler : MonoBehaviour
     private bool isLeftGrab;
     private bool isRightGrab;
     public GameObject door;
-
+    private bool getKey=false;
     private void Awake()
     {
         isLeftGrab = false;
@@ -55,13 +55,27 @@ public class HandControler : MonoBehaviour
             }
            
         }
-        if(other.gameObject.tag == "Door")
+        if (other.gameObject.tag == "Key")  //Item tag인 것만 부딪혔을때 작동
         {
+
             if (isRightGrab == true || isLeftGrab == true)
             {
-                door.transform.eulerAngles = new Vector3(0, 180, 0);
+                getKey = true;
+                Destroy(other.gameObject);  //물건 삭제
             }
 
         }
+        if(getKey == true)
+        {
+            if (other.gameObject.tag == "Door")
+            {
+                if (isRightGrab == true || isLeftGrab == true)
+                {
+                    door.transform.eulerAngles = new Vector3(0, 180, 0);
+                }
+
+            }
+        }
+       
     }
 }

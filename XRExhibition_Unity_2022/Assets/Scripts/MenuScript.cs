@@ -6,14 +6,15 @@ using TMPro;
 
 public class MenuScript : MonoBehaviour
 {
-    public GameObject menuUI, optionUI, titleText, btn1Text, btn2Text, btn3Text;
+    public GameObject menuUI, optionUI, titleText, btn1Text, btn2Text, btn3Text, laser;
 
     public void Start()
-    {
+    { 
         optionUI.SetActive(false);
     }
     public void ClickStart()
     {
+        laser.SetActive(false);
         StartCoroutine(Fade());
         Debug.Log("start´­¸²");
     }

@@ -41,4 +41,8 @@ public class NextSceneScr : MonoBehaviour
         LodingSceneControlScr.LoadScene(SceneName);//¾À ·Îµå 
 
     }
+    public void fadeOut()
+    {
+        OFade.FadeOut();
+    }
 }

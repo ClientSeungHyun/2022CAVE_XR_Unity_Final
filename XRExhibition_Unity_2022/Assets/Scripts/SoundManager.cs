@@ -1,54 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-[System.Serializable]
-public class BgmType
-{
-    public string _name;
-    public AudioClip _audioClip;
-    public BgmType(string name, AudioClip audioClip)
-    {
-        _name = name;
-        _audioClip = audioClip;
-
-    }
-}
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
 
+    private GamaManager GM;
 
-    public BgmType[] BGMList;
+    public AudioClip[] BGMList;
+    public AudioSource soundSource;
+    public Slider BGSlider;
+    //private Slider EFSlider;
 
-    private AudioSource soundSource;
     private string nowBgmName = "";
 
     // Start is called before the first frame update
     void Start()
     {
-        soundSource = gameObject.AddComponent<AudioSource>();
+        GM = GameObject.Find("MenuController").GetComponent<GamaManager>();
+        soundSource = this.gameObject.AddComponent<AudioSource>();
+        soundSource.clip = BGMList[0];
         soundSource.loop = true;
-        if (BGMList.Length > 0)
-        {
-            playBGM(BGMList[0]._name);
+        soundSource.Play();
 
-        }
+        DontDestroyOnLoad(this);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void playBGM(string name)
-    {
-
-        if (nowBgmName.Equals(name)) return;    //같은 노래면 리턴
-
-        soundSource.clip = BGMList[0]._audioClip;
+        soundSource.volume = BGSlider.value;
+        soundSource.clip = BGMList[GM.getGameState()];  //상황에 맞춘 오디오 삽입
         soundSource.Play();
-        nowBgmName = name;
     }
+
+
 }

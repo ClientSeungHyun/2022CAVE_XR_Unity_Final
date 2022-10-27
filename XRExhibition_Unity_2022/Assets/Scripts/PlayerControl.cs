@@ -9,34 +9,50 @@ public class PlayerControl : MonoBehaviour
     private CharacterController characterController; // 현재 캐릭터가 가지고있는 캐릭터 컨트롤러 콜라이더
     private Vector3 moveDirection;   //움직이는 방향
     private Animation MoveAnim; //애니메이션 변수 
+    public AudioSource playerSound;
+    public AudioClip []playerClip;
 
+    public bool isMove;
     public bool isground;
     public bool isHaveKey;
-    public int nowFloor;
+    public bool isHiding;
+
+    public static bool isHaveLastKey;
+    public int preScene;
+    public int nowScene;
     private float gravity = -9.8f;
     private string sceneName;
-   
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
+
         characterController = GetComponent<CharacterController>();
-        leftHand = transform.Find("CustomHandLeft").GetComponent<HandControler>();
-        rightHand = transform.Find("CustomHandRight").GetComponent<HandControler>();
-        
         MoveAnim = transform.Find("OVRCameraRig").GetComponent<Animation>();//애니메이션 컴포넌트 호출
-       
-        DontDestroyOnLoad(this);
+        playerSound = GetComponent<AudioSource>();
+        playerSound.loop = false;
+
+        isMove = false;
         isHaveKey = false;
+        isHaveLastKey = false;
+        isHiding = false;
+
+        preScene = 0;
+        nowScene = 0;
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        print(characterController);
-        setKey();
 
+        //setKey();
         UseGravity();
         WalkShake();
     }
@@ -74,7 +90,7 @@ public class PlayerControl : MonoBehaviour
             Vector2 thumbstick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
             if (thumbstick.x < 0)//왼쪽 조이스틱 움직임
             {
-                MoveAnim.Play("camera_move");//애니메이션 재생 
+
             }
             if (thumbstick.x > 0)//오른쪽 조이스틱 움직임
             {
@@ -96,26 +112,55 @@ public class PlayerControl : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);//FadeOut될동안 3초 딜레이 
         LodingSceneControlScr.LoadScene(sceneName);//씬 로드 
-
+        if (preScene == 0)
+        {
+            playerSound.clip = playerClip[0];
+            playerSound.Play();
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "First")
+        if (other.gameObject.tag == "EnterDoor")
         {
+            print("입구 닿음");
+            leftHand.isIn = rightHand.isIn = false;
+            preScene = nowScene;
+            nowScene = 1;
             sceneName = "FirstFloor";
             StartCoroutine(changeScene());
         }
+        if (other.tag == "First")
+        {
+            preScene = nowScene;
+            nowScene = 1;
+            sceneName = "FirstFloor";
+            StartCoroutine(changeScene());
+
+            playerSound.clip = playerClip[2];
+            playerSound.Play();
+        }
         if (other.tag == "Second")
         {
+            preScene = nowScene;
+            nowScene = 2;
             sceneName = "SecondFloor";
             StartCoroutine(changeScene());
+
+            playerSound.clip = playerClip[2];
+            playerSound.Play();
         }
         if (other.tag == "Third")
         {
+            print("3층");
+            preScene = nowScene;
+            nowScene = 3;
             sceneName = "ThirdFloor";
             StartCoroutine(changeScene());
+
+            playerSound.clip = playerClip[2];
+            playerSound.Play();
         }
         
-
+        
     }
 }

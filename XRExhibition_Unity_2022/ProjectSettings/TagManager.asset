@@ -11,9 +11,14 @@ TagManager:
   - stairTrigger
   - Second
   - First
-  - Thrid
   - Door
   - Key
+  - Box
+  - EnterDoor
+  - Third
+  - LastKey
+  - hidePos
+  - lastDoor
   layers:
   - Default
   - TransparentFX

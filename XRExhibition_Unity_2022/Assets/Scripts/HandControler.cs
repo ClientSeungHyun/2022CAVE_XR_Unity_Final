@@ -1,28 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using OVR;
 
 public class HandControler : MonoBehaviour
 {
-    public GameObject door;
+    public Animator animator;
+    public GameObject player;
+    public GameObject MonsterHead;
+    private GameObject hidPosObj;
+    public GameObject Monster;
 
-    private float Leftf,Rightf;
+
+    private float Leftf, Rightf;
     private bool isLeftGrab;
     private bool isRightGrab;
-    private bool getKey=false;
+    private bool getKey = false;
+    
+
+    public bool isIn;
 
     private void Awake()
     {
+        player =GameObject.Find("Player");
+        MonsterHead = GameObject.Find("Head");
+        hidPosObj = GameObject.Find("hidePos");
+        Monster = GameObject.Find("Monster");
         isLeftGrab = false;
         isRightGrab = false;
+        isIn = false;
     }
 
     // Update is called once per frame
+
     void Update()
     {
         GrabCheck();
-        if (Input.GetKeyDown(KeyCode.Space))
-            door.transform.eulerAngles = new Vector3(0, 180, 0);
+
     }
 
     public bool isKey()
@@ -35,18 +49,23 @@ public class HandControler : MonoBehaviour
         getKey = key;
     }
 
+
     //아이템 습득
     private void GrabCheck()
     {
+
         Leftf = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger);       //왼손 버튼 입력값
+
         Rightf = OVRInput.Get(OVRInput.Axis1D.SecondaryHandTrigger);     //오른손 버튼 입력값
         if (Leftf > 0.9)
         {
             isLeftGrab = true;    //버튼 눌리면 true로
-            print("asdf");
+            //print("asdf");
+            Debug.Log("왼손 잼잼");
         }
-        else if(Rightf > 0.9)
+        else if (Rightf > 0.9)
         {
+            Debug.Log("오른 손 잼잼");
             isRightGrab = true;    //버튼 눌리면 true로
         }
         else
@@ -57,18 +76,55 @@ public class HandControler : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Item")  //Item tag인 것만 부딪혔을때 작동
+        if (other.gameObject.tag == "hidePos")
         {
-           
-            if(isRightGrab == true || isLeftGrab == true)
+            if (isRightGrab == true || isLeftGrab == true)
+            {
+                GameObject.Find("Player").GetComponent<PlayerControl>().isHiding = true;
+                GameObject.Find("InBoxCamera").GetComponent<Camera>().enabled = true;
+                
+                //GameObject.Find("Player").GetComponent<FadeOutScr>().fadeOut();
+
+            }
+            
+        }
+        if (other.gameObject.tag == "lastDoor")
+        {
+            if (isRightGrab == true || isLeftGrab == true)
+            {
+                
+                if(PlayerControl.isHaveLastKey == true)
+                {
+                    GameObject.Find("GamaManager").GetComponent<GamaManager>().monsterApp();
+                    Monster.transform.LookAt(player.transform.position);
+                    Vector3 dir = MonsterHead.transform.position - player.transform.position;
+                    player.transform.rotation = Quaternion.Lerp(player.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 3);
+                    Monster.GetComponent<MonsterController>().chasePlayer();
+                    
+                }
+            }
+        }
+        if (other.gameObject.tag == "LastKey")
+        {
+            if (isRightGrab == true || isLeftGrab == true)
+            {
+                PlayerControl.isHaveLastKey = true;
+                
+            }
+        }
+
+        if (other.gameObject.tag == "Item")  //Item tag인 것만 부딪혔을때 작동
+        {
+
+            if (isRightGrab == true || isLeftGrab == true)
             {
                 Destroy(other.gameObject);  //물건 삭제
             }
-           
+
         }
         if (other.gameObject.tag == "Key")  //Item tag인 것만 부딪혔을때 작동
         {
-
+            Debug.Log(isRightGrab);
             if (isRightGrab == true || isLeftGrab == true)
             {
                 getKey = true;
@@ -76,17 +132,36 @@ public class HandControler : MonoBehaviour
             }
 
         }
-        if(getKey == true)  //키가 있을 때 문 충돌
-        {
-            if (other.gameObject.tag == "Door")
-            {
-                if (isRightGrab == true || isLeftGrab == true)
-                {
-                    door.transform.eulerAngles = new Vector3(0, 180, 0);
-                }
 
+
+
+        if (other.gameObject.tag == "Door")
+        {
+            print("문 닿음");
+            if (isRightGrab == true || isLeftGrab == true)
+            {
+                print("문 만짐");
+                if (getKey)
+                    other.transform.parent.eulerAngles = new Vector3(0, 180, 0);
             }
         }
-       
+
+        if (other.gameObject.tag == "Box")
+        {
+            print("asdf");
+            if (isRightGrab == true || isLeftGrab == true)
+            {
+                if (animator != null)
+                {
+                    animator.SetBool("Opening", true);
+                    getKey = false;
+                }
+            }
+
+        }
+
+
     }
+
+
 }

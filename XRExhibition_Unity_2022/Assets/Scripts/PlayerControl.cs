@@ -4,28 +4,53 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    public HandControler leftHand, rightHand;
+
     private CharacterController characterController; // 현재 캐릭터가 가지고있는 캐릭터 컨트롤러 콜라이더
     private Vector3 moveDirection;   //움직이는 방향
     private Animation MoveAnim; //애니메이션 변수 
 
+    public bool isground;
+    public bool isHaveKey;
+    public int nowFloor;
     private float gravity = -9.8f;
     private string sceneName;
-    public bool isground;
+   
+
     // Start is called before the first frame update
     void Start()
     {
+        leftHand = GetComponent<HandControler>();
+        rightHand = GetComponent<HandControler>();
         characterController = GetComponent<CharacterController>();
         MoveAnim = transform.Find("OVRCameraRig").GetComponent<Animation>();//애니메이션 컴포넌트 호출
         DontDestroyOnLoad(this);
+        isHaveKey = false;
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        setKey();
 
         UseGravity();
         WalkShake();
+    }
+
+    public void setKey()    //키 존재 유무
+    {
+        if(leftHand.isKey() || rightHand.isKey())
+        {
+            isHaveKey = true;
+            
+        }
+        else
+        {
+            isHaveKey = false;
+        }
+        leftHand.setKey(isHaveKey);
+        rightHand.setKey(isHaveKey);
     }
 
     public void UseGravity()

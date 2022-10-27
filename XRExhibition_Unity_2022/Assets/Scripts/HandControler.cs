@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class HandControler : MonoBehaviour
 {
+    public GameObject door;
+
     private float Leftf,Rightf;
     private bool isLeftGrab;
     private bool isRightGrab;
-    public GameObject door;
     private bool getKey=false;
+
     private void Awake()
     {
         isLeftGrab = false;
@@ -23,6 +25,15 @@ public class HandControler : MonoBehaviour
             door.transform.eulerAngles = new Vector3(0, 180, 0);
     }
 
+    public bool isKey()
+    {
+        return getKey;
+    }
+
+    public void setKey(bool key)
+    {
+        getKey = key;
+    }
 
     //아이템 습득
     private void GrabCheck()
@@ -65,7 +76,7 @@ public class HandControler : MonoBehaviour
             }
 
         }
-        if(getKey == true)
+        if(getKey == true)  //키가 있을 때 문 충돌
         {
             if (other.gameObject.tag == "Door")
             {

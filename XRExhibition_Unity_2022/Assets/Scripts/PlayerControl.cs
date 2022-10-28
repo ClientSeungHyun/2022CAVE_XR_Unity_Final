@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class PlayerControl : MonoBehaviour
     public bool isHaveKey;
     public bool isHiding;
 
-    public static bool isHaveLastKey;
+    public bool isHaveLastKey;
     public int preScene;
     public int nowScene;
     private float gravity = -9.8f;
@@ -51,7 +52,11 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float x = Input.GetAxisRaw("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
+        moveDirection = new Vector3(x, 0, z);
 
+        characterController.Move(moveDirection * 10.0f * Time.deltaTime);
         //setKey();
         UseGravity();
         WalkShake();
@@ -108,10 +113,10 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    IEnumerator changeScene()
+    void changeScene()
     {
-        yield return new WaitForSeconds(1.0f);//FadeOutµ…µøæ» 3√  µÙ∑π¿Ã 
-        LodingSceneControlScr.LoadScene(sceneName);//æ¿ ∑ŒµÂ 
+        
+        SceneManager.LoadScene(sceneName);//æ¿ ∑ŒµÂ 
         if (preScene == 0)
         {
             playerSound.clip = playerClip[0];
@@ -127,14 +132,14 @@ public class PlayerControl : MonoBehaviour
             preScene = nowScene;
             nowScene = 1;
             sceneName = "FirstFloor";
-            StartCoroutine(changeScene());
+            changeScene();
         }
         if (other.tag == "First")
         {
             preScene = nowScene;
             nowScene = 1;
             sceneName = "FirstFloor";
-            StartCoroutine(changeScene());
+            changeScene();
 
             playerSound.clip = playerClip[2];
             playerSound.Play();
@@ -144,7 +149,7 @@ public class PlayerControl : MonoBehaviour
             preScene = nowScene;
             nowScene = 2;
             sceneName = "SecondFloor";
-            StartCoroutine(changeScene());
+            changeScene();
 
             playerSound.clip = playerClip[2];
             playerSound.Play();
@@ -155,7 +160,7 @@ public class PlayerControl : MonoBehaviour
             preScene = nowScene;
             nowScene = 3;
             sceneName = "ThirdFloor";
-            StartCoroutine(changeScene());
+            changeScene();
 
             playerSound.clip = playerClip[2];
             playerSound.Play();

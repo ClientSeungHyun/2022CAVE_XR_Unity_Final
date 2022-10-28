@@ -76,14 +76,12 @@ public class HandControler : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "hidePos")
+        if (other.gameObject.tag == "hidePos")  //통 안에 숨기
         {
             if (isRightGrab == true || isLeftGrab == true)
             {
                 GameObject.Find("Player").GetComponent<PlayerControl>().isHiding = true;
-                GameObject.Find("InBoxCamera").GetComponent<Camera>().enabled = true;
                 
-                //GameObject.Find("Player").GetComponent<FadeOutScr>().fadeOut();
 
             }
             
@@ -93,9 +91,9 @@ public class HandControler : MonoBehaviour
             if (isRightGrab == true || isLeftGrab == true)
             {
                 
-                if(PlayerControl.isHaveLastKey == true)
+                if(GameObject.Find("Player").GetComponent<PlayerControl>().isHaveLastKey == true)   //1층 마무리 부분
                 {
-                    GameObject.Find("GamaManager").GetComponent<GamaManager>().monsterApp();
+                    //GameObject.Find("GamaManager").GetComponent<GamaManager>().monsterApp(1);
                     Monster.transform.LookAt(player.transform.position);
                     Vector3 dir = MonsterHead.transform.position - player.transform.position;
                     player.transform.rotation = Quaternion.Lerp(player.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 3);
@@ -108,7 +106,7 @@ public class HandControler : MonoBehaviour
         {
             if (isRightGrab == true || isLeftGrab == true)
             {
-                PlayerControl.isHaveLastKey = true;
+                GameObject.Find("Player").GetComponent<PlayerControl>().isHaveLastKey = true;
                 
             }
         }

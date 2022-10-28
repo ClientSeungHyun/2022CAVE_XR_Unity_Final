@@ -18,6 +18,7 @@ public class GamaManager : MonoBehaviour
     public GameObject InBoxCamera;
     public GameObject Monster;
 
+    public bool isMonsterGone;
     private int gameState;
     // Start is called before the first frame update
     void Start()
@@ -25,34 +26,29 @@ public class GamaManager : MonoBehaviour
         gameState = (int)GAMESTATE.MainMenu;
         optionUI.SetActive(false);
         gameState = 0;
-        //Instantiate(Monster, GameObject.Find("PlayerPosition0").transform.position, Quaternion.identity);
+        isMonsterGone = false;
+
         DontDestroyOnLoad(this);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Monster = GameObject.Find("Monster");
-
         playerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
         if (playerControl.nowScene > 0)
             gameState = (int)GAMESTATE.INHOUSE;
-        if (playerControl.isHiding == true)
-            monsterApp();
-        else
-            Instantiate(Monster, GameObject.Find("PlayerPosition0").transform.position, Quaternion.identity); //Monster.SetActive(false);
+
+
 
 
     }
+
 
     public int getGameState()
     {
         return gameState;
     }
-    public void monsterApp()
-    {
-        Instantiate(Monster, GameObject.Find("MonsterPos").transform.position, Quaternion.identity);
-    }
+    
 
 
 

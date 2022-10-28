@@ -8,8 +8,8 @@ public class MonsterController : MonoBehaviour
     enum STATE { Idle, Chase };
 
     public GameObject player;
-    private NavMeshAgent agent;
-    private Animator animator;
+    public NavMeshAgent agent;
+    public Animator animator;
     public GameObject playerForwardDir;
     public GameObject PlayerPos;
     public GameObject MonsterHead;
@@ -58,10 +58,10 @@ public class MonsterController : MonoBehaviour
             chasePlayer();
             animator.SetInteger("MonsterState", animState);
         }
-        else if (player.GetComponent<PlayerControl>().nowScene == 2 && player.GetComponent<PlayerControl>().isHaveKey==true)
+        else if (player.GetComponent<PlayerControl>().nowScene == 2 && player.GetComponent<PlayerControl>().isHiding==true)
         {
-            
-            Invoke("isAction", 2);
+            print("±«¹° µîÀå");
+            isAction();
         }
 
         if (isHit == true)
@@ -81,21 +81,39 @@ public class MonsterController : MonoBehaviour
             isHit = true;
             transform.LookAt(PlayerPos.transform.position);
             StartCoroutine(changeScene());
-            //Cam.transform.LookAt(transform.position);
-            //transform.position = playerForwardDir.transform.position
         }
     }
 
     public void isAction()
     {
-        this.gameObject.SetActive(true);
+        animState = 1;
         
-        if(isTurn)
-            agent.SetDestination(destroyPoint.position);
+        if(Vector3.Distance(transform.position, turningPoint.position) <= 2.0f)
+            isTurn = true;
+        if (Vector3.Distance(transform.position, destroyPoint.position) <= 5.0f && isTurn == true)
+        {
+            Destroy(this.gameObject);
+        }
+
+        if (isTurn)
+        {
+            animState = 0;
+            Invoke("setTarget", 5f);
+        }
         else
-            agent.SetDestination(turningPoint.position);
+        {
+            animState = 1;
+            agent.destination = turningPoint.position;
+        }
+        animator.SetInteger("MonsterState", animState);
     }
     
+    public void setTarget()
+    {
+        animState = 1;
+        agent.destination = destroyPoint.position;
+    }
+
     public bool chasePlayer()
     {
 

@@ -508,8 +508,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.366634, y: 2.0099497, z: 4.024558}
-  m_Center: {x: 0.065289736, y: 1.0049744, z: 1.3517303}
+  m_Size: {x: 3.366634, y: 2.0099497, z: 3.3380146}
+  m_Center: {x: 0.065289736, y: 1.0049744, z: 1.0084586}
 --- !u!1001 &106457721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1941,6 +1941,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   player: {fileID: 0}
+  monster: {fileID: 0}
   playerControl: {fileID: 0}
   leftHand: {fileID: 0}
   rightHand: {fileID: 0}
@@ -5432,6 +5433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  agent: {fileID: 0}
   playerForwardDir: {fileID: 0}
   PlayerPos: {fileID: 0}
   MonsterHead: {fileID: 2147042194}

@@ -12,6 +12,11 @@ public class FloorSetting : MonoBehaviour
     public HandControler leftHand, rightHand;
     public GameObject []startPosition;
     public Camera InBoxCamera;
+    public GameObject hidingBox;
+
+
+    AudioSource monsterSource;
+    AudioClip monsterSound;
 
     // Start is called before the first frame update
     void Start()
@@ -25,29 +30,46 @@ public class FloorSetting : MonoBehaviour
         if (InBoxCamera != null)
             InBoxCamera.enabled = false;
 
-        if (playerControl.preScene == 0)
+        if (playerControl.preScene == 0) //일반 1층
             player.transform.position = startPosition[0].transform.position;
-        else if (playerControl.preScene == 1)
+        else if (playerControl.preScene == 1)   //일반 2층_1
             player.transform.position = startPosition[0].transform.position;
         else if (playerControl.preScene == 3)
+        {  //3층에서 2층
             player.transform.position = startPosition[1].transform.position;
-        else if (playerControl.preScene == 2 && playerControl.nowScene == 3)
+            if(playerControl.isHaveLastKey == true) //마지막 키를 갖고 있다면
+            {
+                monsterSource = monster.GetComponent<AudioSource>();
+                monsterSource.loop = false;
+                monsterSource.Play();
+            }
+        }
+        else if (playerControl.preScene == 2 && playerControl.nowScene == 3)    //일반 3층
         {
             player.transform.position = startPosition[0].transform.position;
             leftHand.animator = rightHand.animator = animator;
             leftHand.animator.SetBool("Opening", false);
         }
-        else if (playerControl.preScene == 2 && playerControl.nowScene == 1)
+        else if (playerControl.preScene == 2 && playerControl.nowScene == 1) //일반 1층
             player.transform.position = startPosition[1].transform.position;
-        print(playerControl.preScene + playerControl.nowScene);
-        print("FloorSetting");
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(playerControl.nowScene == 2 && playerControl.isHiding == true)
+        //마지막 열쇠를 가지고 숨을 수 있는 상태에서만 상자가 빛나
+        if(playerControl.isHaveLastKey == true)
+        {
+            hidingBox.GetComponent<Light>().range = 10;
+            hidingBox.GetComponent<Light>().intensity = 2;
+        }
+        else
+        {
+            hidingBox.GetComponent<Light>().range = 0;
+            hidingBox.GetComponent<Light>().intensity = 1;
+        }
+        if(playerControl.nowScene == 2 && playerControl.isHiding == true)   //2층에서 숨으면 괴물이 등장
         {
             player.SetActive(false);
             GameObject.Find("InBoxCamera").GetComponent<Camera>().enabled = true;

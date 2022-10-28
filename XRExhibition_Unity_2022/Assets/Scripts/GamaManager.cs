@@ -9,7 +9,7 @@ public class GamaManager : MonoBehaviour
 
     public enum GAMESTATE : int { MainMenu, OUTDOOR, INHOUSE, END };
 
-    private SoundManager soundManager;
+    public SoundManager soundManager;
     public PlayerControl playerControl;
     private MonsterController monsterController;
 
@@ -19,7 +19,7 @@ public class GamaManager : MonoBehaviour
     public GameObject Monster;
 
     public bool isMonsterGone;
-    private int gameState;
+    public int gameState;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +56,10 @@ public class GamaManager : MonoBehaviour
     public void ClickStart()
     {
         gameState = (int)GAMESTATE.OUTDOOR;
+        //soundManager.soundSource.Stop();
+        //soundManager.soundSource.clip = soundManager.BGMList[gameState];
+        //soundManager.soundSource.Play();
+
         laser.SetActive(false);
         StartCoroutine(Fade());
     }

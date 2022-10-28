@@ -7,6 +7,8 @@ public class MonsterController : MonoBehaviour
 {
     enum STATE { Idle, Chase };
 
+    GamaManager gm;
+
     public GameObject player;
     public NavMeshAgent agent;
     public Animator animator;
@@ -28,6 +30,8 @@ public class MonsterController : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
+        gm = GameObject.Find("GameManager").GetComponent<GamaManager>();
+
         if (player.GetComponent<PlayerControl>().nowScene == 0)
         {
             
@@ -52,24 +56,28 @@ public class MonsterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (player.GetComponent<PlayerControl>().nowScene == 0)
+        if ((int)gm.gameState > 0)
         {
-            chasePlayer();
-            animator.SetInteger("MonsterState", animState);
-        }
-        else if (player.GetComponent<PlayerControl>().nowScene == 2 && player.GetComponent<PlayerControl>().isHiding==true)
-        {
-            print("±«¹° µîÀå");
-            isAction();
-        }
 
-        if (isHit == true)
-        {
-            Vector3 dir = MonsterHead.transform.position - PlayerPos.transform.position;
-            PlayerPos.transform.rotation = Quaternion.Lerp(PlayerPos.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 3);
-            //Debug.Log(PlayerPos.transform.rotation);
 
+            if (player.GetComponent<PlayerControl>().nowScene == 0)
+            {
+                chasePlayer();
+                animator.SetInteger("MonsterState", animState);
+            }
+            else if (player.GetComponent<PlayerControl>().nowScene == 2 && player.GetComponent<PlayerControl>().isHiding == true)
+            {
+                print("±«¹° µîÀå");
+                isAction();
+            }
+
+            if (isHit == true)
+            {
+                Vector3 dir = MonsterHead.transform.position - PlayerPos.transform.position;
+                PlayerPos.transform.rotation = Quaternion.Lerp(PlayerPos.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 3);
+                //Debug.Log(PlayerPos.transform.rotation);
+
+            }
         }
     }
 

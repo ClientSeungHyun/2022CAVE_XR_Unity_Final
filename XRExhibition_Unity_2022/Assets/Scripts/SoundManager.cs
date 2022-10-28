@@ -18,7 +18,7 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GM = GameObject.Find("MenuController").GetComponent<GamaManager>();
+        GM = GameObject.Find("GameManager").GetComponent<GamaManager>();
         soundSource = this.gameObject.AddComponent<AudioSource>();
         soundSource.clip = BGMList[0];
         soundSource.loop = true;
@@ -30,9 +30,9 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GM.gameState == 2)
+            soundSource.clip = BGMList[2];
         soundSource.volume = BGSlider.value;
-        soundSource.clip = BGMList[GM.getGameState()];  //상황에 맞춘 오디오 삽입
-        soundSource.Play();
     }
 
 

@@ -52,12 +52,7 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
-        moveDirection = new Vector3(x, 0, z);
-
-        characterController.Move(moveDirection * 10.0f * Time.deltaTime);
-        //setKey();
+        setKey();
         UseGravity();
         WalkShake();
     }

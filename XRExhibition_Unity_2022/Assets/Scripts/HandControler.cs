@@ -80,8 +80,10 @@ public class HandControler : MonoBehaviour
         {
             if (isRightGrab == true || isLeftGrab == true)
             {
-                GameObject.Find("Player").GetComponent<PlayerControl>().isHiding = true;
-                
+                if (player.GetComponent<PlayerControl>().isHaveLastKey == true) //마지막 키를 얻은 상태에서만 가능
+                {
+                    GameObject.Find("Player").GetComponent<PlayerControl>().isHiding = true;
+                }
 
             }
             

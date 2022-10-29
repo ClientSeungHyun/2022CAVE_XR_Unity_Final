@@ -8,8 +8,8 @@ public class Laser : MonoBehaviour
     private LineRenderer laser;
     private RaycastHit Hit_obj;
 
-    private float buttonFloat_L, buttonFloat_R;
-    private bool buttonPush_L = false, buttonPush_R = false;
+    //private float buttonFloat_L, buttonFloat_R;
+   // private bool buttonPush_L = false, buttonPush_R = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,11 +26,18 @@ public class Laser : MonoBehaviour
     void Update()
     {
         //Debug.Log(transform.forward);
-        laser.SetPosition(0, transform.position);
-        laser.SetPosition(1, transform.position + (transform.forward * 2));
+        if(GameObject.Find("GameManager").GetComponent<GamaManager>().laserShow == true)
+        {
+            laser.SetPosition(0, transform.position);
+            laser.SetPosition(1, transform.position + (transform.forward * 0.8f));
+        }
+        else
+        {
+            laser.enabled = false;
+        }
 
         //버튼 입력 받는 함수
-        GetButton();
+       /* GetButton();
 
         if (Physics.Raycast(transform.position, transform.forward, out Hit_obj))
         {
@@ -48,9 +55,9 @@ public class Laser : MonoBehaviour
                 }
 
             }
-        }
+        }*/
     }
-    private void GetButton()
+   /* private void GetButton()
     {
         //컨트롤러의 버튼 입력 받기(float형태)
         buttonFloat_L = OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, OVRInput.Controller.LTouch);
@@ -80,6 +87,6 @@ public class Laser : MonoBehaviour
         }
 
     }
-
+   */
    
 }

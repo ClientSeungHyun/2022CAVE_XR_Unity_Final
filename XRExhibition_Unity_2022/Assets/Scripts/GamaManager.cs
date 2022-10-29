@@ -14,10 +14,11 @@ public class GamaManager : MonoBehaviour
     private MonsterController monsterController;
 
 
-    public GameObject menuUI, optionUI, titleText, btn1Text, btn2Text, btn3Text, laser;
+    public GameObject menuUI, optionUI, titleText, btn1Text, btn2Text, btn3Text;
     public GameObject InBoxCamera;
     public GameObject Monster;
 
+    public bool laserShow = true;
     public bool isMonsterGone;
     public int gameState;
     // Start is called before the first frame update
@@ -60,7 +61,7 @@ public class GamaManager : MonoBehaviour
         //soundManager.soundSource.clip = soundManager.BGMList[gameState];
         //soundManager.soundSource.Play();
 
-        laser.SetActive(false);
+        laserShow = false;
         StartCoroutine(Fade());
     }
     public void ClickOptions()

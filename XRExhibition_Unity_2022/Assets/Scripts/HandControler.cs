@@ -11,7 +11,7 @@ public class HandControler : MonoBehaviour
     private GameObject hidPosObj;
     public GameObject Monster;
 
-
+    private bool boxOpen = false;
     private float Leftf, Rightf;
     private bool isLeftGrab;
     private bool isRightGrab;
@@ -106,11 +106,15 @@ public class HandControler : MonoBehaviour
         }
         if (other.gameObject.tag == "LastKey")
         {
-            if (isRightGrab == true || isLeftGrab == true)
+            if(boxOpen == true)
             {
-                GameObject.Find("Player").GetComponent<PlayerControl>().isHaveLastKey = true;
-                
+                if (isRightGrab == true || isLeftGrab == true)
+                {
+                    GameObject.Find("Player").GetComponent<PlayerControl>().isHaveLastKey = true;
+                    Destroy(other.gameObject);
+                }
             }
+            
         }
 
         if (other.gameObject.tag == "Item")  //Item tag¿Œ ∞Õ∏∏ ∫Œµ˙«˚¿ª∂ß ¿€µø
@@ -148,14 +152,19 @@ public class HandControler : MonoBehaviour
 
         if (other.gameObject.tag == "Box")
         {
-            print("asdf");
-            if (isRightGrab == true || isLeftGrab == true)
+            //print("asdf");
+            if(getKey == true)
             {
-                if (animator != null)
+                if (isRightGrab == true || isLeftGrab == true)
                 {
-                    animator.SetBool("Opening", true);
-                    getKey = false;
+                    if (animator != null)
+                    {
+                        animator.SetBool("Opening", true);
+                        getKey = false;
+                        boxOpen = true;
+                    }
                 }
+
             }
 
         }

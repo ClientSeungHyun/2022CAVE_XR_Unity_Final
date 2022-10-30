@@ -2333,7 +2333,7 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 
 	private void OnDestroy()
 	{
-		Debug.Log("[OVRManager] OnDestroy");
+		//Debug.Log("[OVRManager] OnDestroy");
 #if UNITY_EDITOR
 		OVRPlugin.SetLogCallback2(null);
 #endif

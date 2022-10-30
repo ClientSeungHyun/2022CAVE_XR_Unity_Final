@@ -1949,6 +1949,7 @@ MonoBehaviour:
   - {fileID: 1466826662}
   - {fileID: 116677234}
   InBoxCamera: {fileID: 0}
+  hidingBox: {fileID: 0}
 --- !u!4 &470252646
 Transform:
   m_ObjectHideFlags: 0
@@ -5291,7 +5292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5394465701583853714, guid: b2fc9d21ed5c0eb4fad771163d3db6c6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2fc9d21ed5c0eb4fad771163d3db6c6, type: 3}
@@ -5351,6 +5352,7 @@ MonoBehaviour:
   turningPoint: {fileID: 0}
   destroyPoint: {fileID: 0}
   isTurn: 0
+  isHit: 0
   isChase: 0
 --- !u!82 &1530101797
 AudioSource:

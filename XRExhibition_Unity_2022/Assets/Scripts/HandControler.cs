@@ -16,8 +16,7 @@ public class HandControler : MonoBehaviour
     private bool isLeftGrab;
     private bool isRightGrab;
     private bool getKey = false;
-    
-
+    public bool isLastDoorOpen;
     public bool isIn;
 
     private void Awake()
@@ -28,6 +27,7 @@ public class HandControler : MonoBehaviour
         Monster = GameObject.Find("Monster");
         isLeftGrab = false;
         isRightGrab = false;
+        isLastDoorOpen = false;
         isIn = false;
     }
 
@@ -96,10 +96,7 @@ public class HandControler : MonoBehaviour
                 if(GameObject.Find("Player").GetComponent<PlayerControl>().isHaveLastKey == true)   //1층 마무리 부분
                 {
                     //GameObject.Find("GamaManager").GetComponent<GamaManager>().monsterApp(1);
-                    Monster.transform.LookAt(player.transform.position);
-                    Vector3 dir = MonsterHead.transform.position - player.transform.position;
-                    player.transform.rotation = Quaternion.Lerp(player.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 3);
-                    Monster.GetComponent<MonsterController>().chasePlayer();
+                    isLastDoorOpen = true;
                     
                 }
             }

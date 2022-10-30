@@ -14,6 +14,7 @@ public class SoundManager : MonoBehaviour
     //private Slider EFSlider;
 
     private string nowBgmName = "";
+    public float soundSize;
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +31,11 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GM.gameState == 2)
-            soundSource.clip = BGMList[2];
-        soundSource.volume = BGSlider.value;
+        if(BGSlider != null)
+        {
+            soundSize = BGSlider.value;
+        }
+        soundSource.volume = soundSize;
     }
 
 

@@ -17,6 +17,7 @@ public class PlayerControl : MonoBehaviour
     public bool isground;
     public bool isHaveKey;
     public bool isHiding;
+    public bool isLastDoorOpen;
 
     public bool isHaveLastKey;
     public int preScene;
@@ -42,6 +43,7 @@ public class PlayerControl : MonoBehaviour
         isHaveKey = false;
         isHaveLastKey = false;
         isHiding = false;
+        isLastDoorOpen = false;
 
         preScene = 0;
         nowScene = 0;
@@ -52,6 +54,12 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(leftHand.isLastDoorOpen == true || rightHand.isLastDoorOpen == true)
+        {
+            isLastDoorOpen = leftHand.isLastDoorOpen = rightHand.isLastDoorOpen = true;
+            GetComponent<OVRPlayerController>().Acceleration = 0;   //가속도를 0으로 해서 못 움직이게
+        }
         setKey();
         UseGravity();
         WalkShake();
@@ -114,6 +122,7 @@ public class PlayerControl : MonoBehaviour
         SceneManager.LoadScene(sceneName);//씬 로드 
         if (preScene == 0)
         {
+            playerSound.loop = false;
             playerSound.clip = playerClip[0];
             playerSound.Play();
         }

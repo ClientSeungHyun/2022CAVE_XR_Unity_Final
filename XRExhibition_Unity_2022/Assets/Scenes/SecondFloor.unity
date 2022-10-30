@@ -3220,7 +3220,7 @@ GameObject:
   - component: {fileID: 973653697}
   - component: {fileID: 973653696}
   m_Layer: 0
-  m_Name: StartPosition
+  m_Name: FloorSetting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6604,7 +6604,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 56
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -6629,13 +6629,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951188526}
-  m_LocalRotation: {x: -0, y: 0.23951985, z: -0, w: 0.9708915}
-  m_LocalPosition: {x: -6.7, y: 1.78, z: -13.48}
+  m_LocalRotation: {x: -0.23816332, y: 0.23220164, z: 0.058755115, w: 0.94122714}
+  m_LocalPosition: {x: -6.7, y: 1.724, z: -13.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 27.716, z: 0}
+  m_LocalEulerAnglesHint: {x: -28.4, y: 27.716, z: 0}
 --- !u!1 &1995528226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5394465701583853714, guid: b2fc9d21ed5c0eb4fad771163d3db6c6, type: 3}
@@ -6687,6 +6687,7 @@ MonoBehaviour:
   turningPoint: {fileID: 1097553782}
   destroyPoint: {fileID: 384430782}
   isTurn: 0
+  isHit: 0
   isChase: 0
 --- !u!82 &1995528229
 AudioSource:

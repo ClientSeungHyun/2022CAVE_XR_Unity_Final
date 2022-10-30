@@ -681,12 +681,12 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793310529665513518}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.085}
+  m_LocalPosition: {x: 0, y: 0, z: 1.085001}
   m_LocalScale: {x: 0.0037594982, y: 0.0025063322, z: 0.0037594982}
   m_Children:
   - {fileID: 793310529903306535}
-  m_Father: {fileID: 2193793181689091016}
-  m_RootOrder: 0
+  m_Father: {fileID: 2193793182148406715}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2202,8 +2202,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 793310529665513514}
+  m_Children: []
   m_Father: {fileID: 2193793181821618699}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3313,6 +3312,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2193793181821618699}
+  - {fileID: 793310529665513514}
   m_Father: {fileID: 2193793183473964595}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6781,9 +6781,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHand: {fileID: 0}
   rightHand: {fileID: 0}
-  sceneStartPosition:
-  - {fileID: 0}
-  - {fileID: 0}
   playerSound: {fileID: 0}
   playerClip:
   - {fileID: 8300000, guid: 14352adae142ed841961b3fdac0252eb, type: 3}
@@ -6794,6 +6791,9 @@ MonoBehaviour:
   isMove: 0
   isground: 0
   isHaveKey: 0
+  isHiding: 0
+  isLastDoorOpen: 0
+  isHaveLastKey: 0
   preScene: 0
   nowScene: 0
 --- !u!65 &793310530679843808

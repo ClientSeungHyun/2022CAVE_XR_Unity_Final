@@ -5,9 +5,10 @@ using UnityEngine.AI;
 
 public class MonsterController : MonoBehaviour
 {
-    enum STATE { Idle, Chase };
+    enum STATE { Idle, Chase, Attack };
 
     GamaManager gm;
+    FloorSetting floorSetting;
 
     public GameObject player;
     public NavMeshAgent agent;
@@ -23,14 +24,21 @@ public class MonsterController : MonoBehaviour
     public bool isTurn;
 
 
-    private bool isHit = false;
+    public bool isHit;
     public bool isChase;
+    public bool isWalkStart;
     private int animState;
+    private int onceTime;
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
         gm = GameObject.Find("GameManager").GetComponent<GamaManager>();
+        isHit = false;
+        isChase = false;
+        isWalkStart = false;
+        onceTime = 1;
 
         if (player.GetComponent<PlayerControl>().nowScene == 0)
         {
@@ -58,9 +66,7 @@ public class MonsterController : MonoBehaviour
     {
         if ((int)gm.gameState > 0)
         {
-
-
-            if (player.GetComponent<PlayerControl>().nowScene == 0)
+            if (player.GetComponent<PlayerControl>().nowScene == 0 || player.GetComponent<PlayerControl>().nowScene == 1)
             {
                 chasePlayer();
                 animator.SetInteger("MonsterState", animState);
@@ -79,16 +85,36 @@ public class MonsterController : MonoBehaviour
 
             }
         }
+
+        if(animState == 1)
+        {
+            if (monsterSource.clip == monsterClip[0] && monsterSource.isPlaying)
+            {
+                monsterSource.Stop();
+                print("울음소리 멈춤");
+            }
+            monsterSource.loop = true;
+            monsterSource.clip = monsterClip[1];
+            if (isWalkStart == true && onceTime > 0)
+            {
+                print("나 걷는다");
+                monsterSource.Play();
+                isWalkStart = false;
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            animator.SetTrigger("Attack");
             isHit = true;
+            monsterSource.Stop();
+            animState = 2;
+            animator.SetInteger("MonsterState", animState);
             transform.LookAt(PlayerPos.transform.position);
             StartCoroutine(changeScene());
+            player.GetComponent<OVRPlayerController>().Acceleration = 0;  //플레이어 못 움직이게
         }
     }
 
@@ -100,6 +126,8 @@ public class MonsterController : MonoBehaviour
             isTurn = true;
         if (Vector3.Distance(transform.position, destroyPoint.position) <= 5.0f && isTurn == true)
         {
+            floorSetting = GameObject.Find("FloorSetting").GetComponent<FloorSetting>();
+            floorSetting.playerControl.isHiding = false;
             Destroy(this.gameObject);
         }
 
@@ -124,7 +152,8 @@ public class MonsterController : MonoBehaviour
 
     public bool chasePlayer()
     {
-
+        isWalkStart = true;
+        onceTime = -1;
         animState = 1;
         agent.speed = 8.0f;
         agent.SetDestination(player.transform.position);
@@ -136,7 +165,7 @@ public class MonsterController : MonoBehaviour
     }
     IEnumerator changeScene()
     {
-        yield return new WaitForSeconds(3.0f);//FadeOut될동안 3초 딜레이 
+        yield return new WaitForSeconds(2.0f);//FadeOut될동안 3초 딜레이 
         LodingSceneControlScr.LoadScene("EndingScene");//씬 로드 
 
     }

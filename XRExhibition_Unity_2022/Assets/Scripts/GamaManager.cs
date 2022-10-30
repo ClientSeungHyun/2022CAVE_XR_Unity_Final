@@ -11,7 +11,7 @@ public class GamaManager : MonoBehaviour
 
     public SoundManager soundManager;
     public PlayerControl playerControl;
-    private MonsterController monsterController;
+    public MonsterController monsterController;
 
 
     public GameObject menuUI, optionUI, titleText, btn1Text, btn2Text, btn3Text;
@@ -28,6 +28,8 @@ public class GamaManager : MonoBehaviour
         optionUI.SetActive(false);
         gameState = 0;
         isMonsterGone = false;
+        
+        monsterController = Monster.GetComponent<MonsterController>();
 
         DontDestroyOnLoad(this);
     }
@@ -57,6 +59,8 @@ public class GamaManager : MonoBehaviour
     public void ClickStart()
     {
         gameState = (int)GAMESTATE.OUTDOOR;
+        print(monsterController.isWalkStart);
+
         //soundManager.soundSource.Stop();
         //soundManager.soundSource.clip = soundManager.BGMList[gameState];
         //soundManager.soundSource.Play();

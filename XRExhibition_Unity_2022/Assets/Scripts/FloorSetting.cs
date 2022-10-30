@@ -30,18 +30,21 @@ public class FloorSetting : MonoBehaviour
         if (InBoxCamera != null)
             InBoxCamera.enabled = false;
 
-        if (playerControl.preScene == 0) //일반 1층
+        if (playerControl.preScene == 0)//일반 1층
+        {
             player.transform.position = startPosition[0].transform.position;
+            monster.SetActive(false);
+        }
         else if (playerControl.preScene == 1)   //일반 2층_1
             player.transform.position = startPosition[0].transform.position;
         else if (playerControl.preScene == 3)
         {  //3층에서 2층
             player.transform.position = startPosition[1].transform.position;
-            if(playerControl.isHaveLastKey == true) //마지막 키를 갖고 있다면
+            if (playerControl.isHaveLastKey == true) //마지막 키를 갖고 있다면
             {
                 monsterSource = monster.GetComponent<AudioSource>();
                 monsterSource.loop = false;
-                monsterSource.Play();
+                monsterSource.Play();   //괴물 소리가 들림
             }
         }
         else if (playerControl.preScene == 2 && playerControl.nowScene == 3)    //일반 3층
@@ -52,22 +55,25 @@ public class FloorSetting : MonoBehaviour
         }
         else if (playerControl.preScene == 2 && playerControl.nowScene == 1) //일반 1층
             player.transform.position = startPosition[1].transform.position;
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //마지막 열쇠를 가지고 숨을 수 있는 상태에서만 상자가 빛나
-        if(playerControl.isHaveLastKey == true)
+        //2층에서 마지막 열쇠를 가지고 숨을 수 있는 상태에서만 상자가 빛남
+        if (hidingBox != null)
         {
-            hidingBox.GetComponent<Light>().range = 10;
-            hidingBox.GetComponent<Light>().intensity = 2;
-        }
-        else
-        {
-            hidingBox.GetComponent<Light>().range = 0;
-            hidingBox.GetComponent<Light>().intensity = 1;
+            if (playerControl.isHaveLastKey == true)
+            {
+                hidingBox.GetComponent<Light>().range = 10;
+                hidingBox.GetComponent<Light>().intensity = 2;
+            }
+            else
+            {
+                hidingBox.GetComponent<Light>().range = 0;
+                hidingBox.GetComponent<Light>().intensity = 1;
+            }
         }
         if(playerControl.nowScene == 2 && playerControl.isHiding == true)   //2층에서 숨으면 괴물이 등장
         {
@@ -77,9 +83,20 @@ public class FloorSetting : MonoBehaviour
         }
         else
         {
-            player.SetActive(true);
-            GameObject.Find("InBoxCamera").GetComponent<Camera>().enabled = false;
+            Invoke("hidingOver", 3.0f);
             monster.SetActive(false);
         }
+
+        if(playerControl.isLastDoorOpen == true)    //마지막 문을 열면
+        {
+            monster.SetActive(true);    //몬스터 활성화(몬스터컨트롤스크립트에서 알아서 쫓아감)
+        }
+    }
+
+    public void hidingOver()
+    {
+        player.SetActive(true);
+        playerControl.isHiding = false;
+        GameObject.Find("InBoxCamera").GetComponent<Camera>().enabled = false;
     }
 }

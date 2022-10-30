@@ -151,7 +151,7 @@ public class OVRPlayerController : MonoBehaviour
 	protected CharacterController Controller = null;
 	protected OVRCameraRig CameraRig = null;
 
-	private float MoveScale = 1.0f;
+	private float MoveScale = 1.5f;
 	private Vector3 MoveThrottle = Vector3.zero;
 	private float FallSpeed = 0.0f;
 	private OVRPose? InitialPose;
@@ -362,7 +362,7 @@ public class OVRPlayerController : MonoBehaviour
 				dpad_move = true;
 			}
 
-			MoveScale = 1.0f;
+			MoveScale = 1.5f;
 
 			if ((moveForward && moveLeft) || (moveForward && moveRight) ||
 				(moveBack && moveLeft) || (moveBack && moveRight))

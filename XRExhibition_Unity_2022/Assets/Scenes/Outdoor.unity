@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundManager: {fileID: 647938040}
   playerControl: {fileID: 1545734127640035956}
+  monsterController: {fileID: 0}
   menuUI: {fileID: 1677456225}
   optionUI: {fileID: 255228611}
   titleText: {fileID: 647860823}
@@ -465,9 +466,9 @@ MonoBehaviour:
   BGMList:
   - {fileID: 8300000, guid: 3e6ad9b459c0ce041a3d43a631547de7, type: 3}
   - {fileID: 8300000, guid: d8d77bd7cad59dd47b4b021b346f302f, type: 3}
-  - {fileID: 8300000, guid: 82f44d11827e2c045a0cbf5a566dbc98, type: 3}
   soundSource: {fileID: 647938042}
   BGSlider: {fileID: 309292382}
+  soundSize: 0
 --- !u!81 &647938041
 AudioListener:
   m_ObjectHideFlags: 0
@@ -839,6 +840,7 @@ MonoBehaviour:
   player: {fileID: 0}
   MonsterHead: {fileID: 0}
   Monster: {fileID: 0}
+  isLastDoorOpen: 0
   isIn: 0
 --- !u!1 &1967443975 stripped
 GameObject:
@@ -873,6 +875,7 @@ MonoBehaviour:
   player: {fileID: 0}
   MonsterHead: {fileID: 0}
   Monster: {fileID: 0}
+  isLastDoorOpen: 0
   isIn: 0
 --- !u!1 &2052108162 stripped
 GameObject:
@@ -1738,9 +1741,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1545734127809653928}
     - target: {fileID: 5555796059410407616, guid: 2bd2e09d5e0dd834d9e49f7e76e53e6d, type: 3}
+      propertyPath: monsterClip.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555796059410407616, guid: 2bd2e09d5e0dd834d9e49f7e76e53e6d, type: 3}
       propertyPath: monsterClip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 62ef05d5d158a914db6bda2f2baf54c2, type: 3}
+    - target: {fileID: 5555796059410407616, guid: 2bd2e09d5e0dd834d9e49f7e76e53e6d, type: 3}
+      propertyPath: monsterClip.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9a707acb96ee67c409a5959c5ad4ab48, type: 3}
     - target: {fileID: 5555796059410407646, guid: 2bd2e09d5e0dd834d9e49f7e76e53e6d, type: 3}
       propertyPath: Priority
       value: 45

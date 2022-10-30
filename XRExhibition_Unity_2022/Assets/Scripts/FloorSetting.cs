@@ -27,6 +27,7 @@ public class FloorSetting : MonoBehaviour
         leftHand = GameObject.Find("CustomHandLeft").GetComponent<HandControler>();
         rightHand = GameObject.Find("CustomHandRight").GetComponent<HandControler>();
 
+
         if (InBoxCamera != null)
             InBoxCamera.enabled = false;
 
@@ -35,27 +36,32 @@ public class FloorSetting : MonoBehaviour
             player.transform.position = startPosition[0].transform.position;
             monster.SetActive(false);
         }
-        else if (playerControl.preScene == 1)   //ÀÏ¹Ý 2Ãþ_1
+        if (playerControl.preScene == 1)
+        {   //ÀÏ¹Ý 2Ãþ_1
             player.transform.position = startPosition[0].transform.position;
-        else if (playerControl.preScene == 3)
+        }
+        if (playerControl.preScene == 3 && playerControl.nowScene == 2)
         {  //3Ãþ¿¡¼­ 2Ãþ
             player.transform.position = startPosition[1].transform.position;
             if (playerControl.isHaveLastKey == true) //¸¶Áö¸· Å°¸¦ °®°í ÀÖ´Ù¸é
             {
-                monsterSource = monster.GetComponent<AudioSource>();
+                monsterSource = GetComponent<AudioSource>();
                 monsterSource.loop = false;
                 monsterSource.Play();   //±«¹° ¼Ò¸®°¡ µé¸²
             }
         }
-        else if (playerControl.preScene == 2 && playerControl.nowScene == 3)    //ÀÏ¹Ý 3Ãþ
+        if (playerControl.preScene == 2 && playerControl.nowScene == 3)    //ÀÏ¹Ý 3Ãþ
         {
             player.transform.position = startPosition[0].transform.position;
             leftHand.animator = rightHand.animator = animator;
             leftHand.animator.SetBool("Opening", false);
         }
-        else if (playerControl.preScene == 2 && playerControl.nowScene == 1) //ÀÏ¹Ý 1Ãþ
+        if (playerControl.preScene == 2 && playerControl.nowScene == 1) //ÀÏ¹Ý 1Ãþ
             player.transform.position = startPosition[1].transform.position;
-        
+
+
+        if (monster != null)
+            monster.SetActive(false);
     }
 
     // Update is called once per frame
@@ -77,15 +83,16 @@ public class FloorSetting : MonoBehaviour
         }
         if(playerControl.nowScene == 2 && playerControl.isHiding == true)   //2Ãþ¿¡¼­ ¼ûÀ¸¸é ±«¹°ÀÌ µîÀå
         {
-            player.SetActive(false);
+            player.transform.GetChild(1).gameObject.SetActive(false);
             GameObject.Find("InBoxCamera").GetComponent<Camera>().enabled = true;
             monster.SetActive(true);
         }
-        else
+        else if(playerControl.nowScene == 2 && monster.GetComponent<MonsterController>().isGone == true)
         {
-            Invoke("hidingOver", 3.0f);
-            monster.SetActive(false);
+            Destroy(monster);
+            Invoke("hidingOver", 3f);
         }
+        
 
         if(playerControl.isLastDoorOpen == true)    //¸¶Áö¸· ¹®À» ¿­¸é
         {
@@ -95,8 +102,11 @@ public class FloorSetting : MonoBehaviour
 
     public void hidingOver()
     {
-        player.SetActive(true);
+        player.transform.GetChild(1).gameObject.SetActive(true);
         playerControl.isHiding = false;
-        GameObject.Find("InBoxCamera").GetComponent<Camera>().enabled = false;
+        playerControl.hideOver = true;
+
+        if(GameObject.Find("InBoxCamera") != null)
+            GameObject.Find("InBoxCamera").GetComponent<Camera>().enabled = false;
     }
 }

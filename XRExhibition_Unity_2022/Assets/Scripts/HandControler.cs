@@ -17,7 +17,7 @@ public class HandControler : MonoBehaviour
     private bool isRightGrab;
     private bool getKey = false;
     public bool isLastDoorOpen;
-    public bool isIn;
+    public bool isHideDone;
 
     private void Awake()
     {
@@ -28,7 +28,7 @@ public class HandControler : MonoBehaviour
         isLeftGrab = false;
         isRightGrab = false;
         isLastDoorOpen = false;
-        isIn = false;
+        isHideDone = false;
     }
 
     // Update is called once per frame
@@ -60,12 +60,9 @@ public class HandControler : MonoBehaviour
         if (Leftf > 0.9)
         {
             isLeftGrab = true;    //버튼 눌리면 true로
-            //print("asdf");
-            Debug.Log("왼손 잼잼");
         }
         else if (Rightf > 0.9)
         {
-            Debug.Log("오른 손 잼잼");
             isRightGrab = true;    //버튼 눌리면 true로
         }
         else
@@ -80,9 +77,10 @@ public class HandControler : MonoBehaviour
         {
             if (isRightGrab == true || isLeftGrab == true)
             {
-                if (player.GetComponent<PlayerControl>().isHaveLastKey == true) //마지막 키를 얻은 상태에서만 가능
+                if (player.GetComponent<PlayerControl>().isHaveLastKey == true && isHideDone == false) //마지막 키를 얻은 상태에서만 가능
                 {
                     GameObject.Find("Player").GetComponent<PlayerControl>().isHiding = true;
+                    isHideDone = true;
                 }
 
             }
@@ -97,7 +95,12 @@ public class HandControler : MonoBehaviour
                 {
                     //GameObject.Find("GamaManager").GetComponent<GamaManager>().monsterApp(1);
                     isLastDoorOpen = true;
-                    
+                    player.GetComponent<PlayerControl>().showMessage("이 열쇠가 아니야..! 젠장..");
+
+                }
+                else
+                {
+                    player.GetComponent<PlayerControl>().showMessage("문이 잠겼다. 열쇠가 필요해..");
                 }
             }
         }
@@ -134,22 +137,8 @@ public class HandControler : MonoBehaviour
 
         }
 
-
-
-        if (other.gameObject.tag == "Door")
-        {
-            print("문 닿음");
-            if (isRightGrab == true || isLeftGrab == true)
-            {
-                print("문 만짐");
-                if (getKey)
-                    other.transform.parent.eulerAngles = new Vector3(0, 180, 0);
-            }
-        }
-
         if (other.gameObject.tag == "Box")
         {
-            //print("asdf");
             if(getKey == true)
             {
                 if (isRightGrab == true || isLeftGrab == true)

@@ -23,7 +23,7 @@ public class MonsterController : MonoBehaviour
     public Transform destroyPoint;
     public bool isTurn;
 
-
+    public bool isGone;
     public bool isHit;
     public bool isChase;
     public bool isWalkStart;
@@ -39,10 +39,10 @@ public class MonsterController : MonoBehaviour
         isChase = false;
         isWalkStart = false;
         onceTime = 1;
+        isGone = false;
 
-        if (player.GetComponent<PlayerControl>().nowScene == 0)
+        if (player.GetComponent<PlayerControl>().nowScene == 0 || player.GetComponent<PlayerControl>().nowScene == 1)
         {
-            
             agent = GetComponent<NavMeshAgent>();
             animator = GetComponent<Animator>();
             monsterSource = GetComponent<AudioSource>();
@@ -51,14 +51,17 @@ public class MonsterController : MonoBehaviour
             monsterSource.clip = monsterClip[0];
             monsterSource.Play();
 
-            animState = 0;
+            animState = 1;
         }
         if (player.GetComponent<PlayerControl>().nowScene == 2)
         {
             turningPoint = GameObject.Find("TurningPoint").transform;
-            destroyPoint = GameObject.Find("PlayerPosition0").transform;
+            destroyPoint = GameObject.Find("PlayerPosition1").transform;
             isTurn = false;
         }
+
+        PlayerPos = GameObject.Find("Player");
+        playerForwardDir = GameObject.Find("ForwardDirection");
     }
 
     // Update is called once per frame
@@ -66,47 +69,41 @@ public class MonsterController : MonoBehaviour
     {
         if ((int)gm.gameState > 0)
         {
-            if (player.GetComponent<PlayerControl>().nowScene == 0 || player.GetComponent<PlayerControl>().nowScene == 1)
+            if (player.GetComponent<PlayerControl>().nowScene == 0 || player.GetComponent<PlayerControl>().isLastDoorOpen)
             {
                 chasePlayer();
+                monsterSource.pitch = 2;
                 animator.SetInteger("MonsterState", animState);
             }
             else if (player.GetComponent<PlayerControl>().nowScene == 2 && player.GetComponent<PlayerControl>().isHiding == true)
             {
-                print("±«¹° µîÀå");
                 isAction();
             }
 
             if (isHit == true)
             {
+                
                 Vector3 dir = MonsterHead.transform.position - PlayerPos.transform.position;
                 PlayerPos.transform.rotation = Quaternion.Lerp(PlayerPos.transform.rotation, Quaternion.LookRotation(dir), Time.deltaTime * 3);
-                //Debug.Log(PlayerPos.transform.rotation);
 
             }
         }
 
         if(animState == 1)
         {
-            if (monsterSource.clip == monsterClip[0] && monsterSource.isPlaying)
+
+            if (!monsterSource.isPlaying)
             {
-                monsterSource.Stop();
-                print("¿ïÀ½¼Ò¸® ¸ØÃã");
-            }
-            monsterSource.loop = true;
-            monsterSource.clip = monsterClip[1];
-            if (isWalkStart == true && onceTime > 0)
-            {
-                print("³ª °È´Â´Ù");
+                monsterSource.loop = true;
+                monsterSource.clip = monsterClip[1];
                 monsterSource.Play();
-                isWalkStart = false;
             }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.tag == "Player" && player.GetComponent<PlayerControl>().nowScene != 2)
         {
             isHit = true;
             monsterSource.Stop();
@@ -128,7 +125,7 @@ public class MonsterController : MonoBehaviour
         {
             floorSetting = GameObject.Find("FloorSetting").GetComponent<FloorSetting>();
             floorSetting.playerControl.isHiding = false;
-            Destroy(this.gameObject);
+            isGone = true;
         }
 
         if (isTurn)
@@ -154,7 +151,6 @@ public class MonsterController : MonoBehaviour
     {
         isWalkStart = true;
         onceTime = -1;
-        animState = 1;
         agent.speed = 8.0f;
         agent.SetDestination(player.transform.position);
         return true;

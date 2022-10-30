@@ -386,8 +386,8 @@ public class OVRPlayerController : MonoBehaviour
 			ortEuler.z = ortEuler.x = 0f;
 			ort = Quaternion.Euler(ortEuler);
 
-			if (moveForward)
-				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * Vector3.forward);
+            if (moveForward)
+                MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * Vector3.forward);
 			if (moveBack)
 				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * BackAndSideDampen * Vector3.back);
 			if (moveLeft)
@@ -395,9 +395,9 @@ public class OVRPlayerController : MonoBehaviour
 			if (moveRight)
 				MoveThrottle += ort * (transform.lossyScale.x * moveInfluence * BackAndSideDampen * Vector3.right);
 
+            
 
-
-			moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
+            moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
 
 #if !UNITY_ANDROID // LeftTrigger not avail on Android game pad
 			moveInfluence *= 1.0f + OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger);

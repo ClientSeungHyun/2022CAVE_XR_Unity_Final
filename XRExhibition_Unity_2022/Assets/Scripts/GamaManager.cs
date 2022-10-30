@@ -17,6 +17,7 @@ public class GamaManager : MonoBehaviour
     public GameObject menuUI, optionUI, titleText, btn1Text, btn2Text, btn3Text;
     public GameObject InBoxCamera;
     public GameObject Monster;
+    public GameObject Player;
 
     public bool laserShow = true;
     public bool isMonsterGone;
@@ -30,6 +31,7 @@ public class GamaManager : MonoBehaviour
         isMonsterGone = false;
         
         monsterController = Monster.GetComponent<MonsterController>();
+        Player = GameObject.Find("Player");
 
         DontDestroyOnLoad(this);
     }
@@ -40,9 +42,6 @@ public class GamaManager : MonoBehaviour
         playerControl = GameObject.Find("Player").GetComponent<PlayerControl>();
         if (playerControl.nowScene > 0)
             gameState = (int)GAMESTATE.INHOUSE;
-
-
-
 
     }
 
@@ -59,13 +58,9 @@ public class GamaManager : MonoBehaviour
     public void ClickStart()
     {
         gameState = (int)GAMESTATE.OUTDOOR;
-        print(monsterController.isWalkStart);
-
-        //soundManager.soundSource.Stop();
-        //soundManager.soundSource.clip = soundManager.BGMList[gameState];
-        //soundManager.soundSource.Play();
-
+        Player.GetComponent<OVRPlayerController>().Acceleration = 0.15f;
         laserShow = false;
+        playerControl.showMessage("이상한 괴물이 날 쫓아온다!\n 저 집 안으로 도망가자!!");
         StartCoroutine(Fade());
     }
     public void ClickOptions()

@@ -35,10 +35,18 @@ public class FloorSetting : MonoBehaviour
         {
             player.transform.position = startPosition[0].transform.position;
             monster.SetActive(false);
+            if(player.GetComponent<Transform>().position.y < 0)
+            {
+                player.transform.position = startPosition[0].transform.position;
+            }
         }
         if (playerControl.preScene == 1)
         {   //ÀÏ¹Ý 2Ãþ_1
             player.transform.position = startPosition[0].transform.position;
+            if (player.GetComponent<Transform>().position.y < 0)
+            {
+                player.transform.position = startPosition[0].transform.position;
+            }
         }
         if (playerControl.preScene == 3 && playerControl.nowScene == 2)
         {  //3Ãþ¿¡¼­ 2Ãþ
@@ -49,15 +57,30 @@ public class FloorSetting : MonoBehaviour
                 monsterSource.loop = false;
                 monsterSource.Play();   //±«¹° ¼Ò¸®°¡ µé¸²
             }
+            if (player.GetComponent<Transform>().position.y < 0)
+            {
+                player.transform.position = startPosition[1].transform.position;
+            }
         }
         if (playerControl.preScene == 2 && playerControl.nowScene == 3)    //ÀÏ¹Ý 3Ãþ
         {
             player.transform.position = startPosition[0].transform.position;
             leftHand.animator = rightHand.animator = animator;
             leftHand.animator.SetBool("Opening", false);
+            if (player.GetComponent<Transform>().position.y < 0)
+            {
+                player.transform.position = startPosition[0].transform.position;
+            }
         }
         if (playerControl.preScene == 2 && playerControl.nowScene == 1) //ÀÏ¹Ý 1Ãþ
+        {
             player.transform.position = startPosition[1].transform.position;
+            if (player.GetComponent<Transform>().position.y < 0)
+            {
+                player.transform.position = startPosition[1].transform.position;
+            }
+        }
+         
 
 
         if (monster != null)

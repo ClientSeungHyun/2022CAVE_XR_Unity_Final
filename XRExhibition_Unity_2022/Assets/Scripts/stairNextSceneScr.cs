@@ -12,11 +12,6 @@ public class stairNextSceneScr : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     IEnumerator changeScene()
     {
         yield return new WaitForSeconds(1.0f);//FadeOut될동안 3초 딜레이 

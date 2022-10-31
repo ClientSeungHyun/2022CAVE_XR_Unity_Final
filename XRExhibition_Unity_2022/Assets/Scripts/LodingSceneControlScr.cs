@@ -39,11 +39,6 @@ public class LodingSceneControlScr : MonoBehaviour
         SceneManager.LoadScene("LoadingScene");//중간 로딩 중 씬 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     IEnumerator LoadSceneProcess()
     {
         AsyncOperation op = SceneManager.LoadSceneAsync(nextScene);//이동할 씬 받아 오기 

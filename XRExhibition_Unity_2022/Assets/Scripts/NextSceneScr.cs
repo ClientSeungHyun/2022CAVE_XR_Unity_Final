@@ -15,17 +15,6 @@ public class NextSceneScr : MonoBehaviour
         OFade = CenterEyeObj.transform.GetComponent<OVRScreenFade>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*if (Input.GetKeyDown(KeyCode.S))
-        {
-            OFade.FadeOut();
-            StartCoroutine(changeScene());
-        }
-        */
-
-    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("stairTrigger"))

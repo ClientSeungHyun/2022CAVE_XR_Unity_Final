@@ -9,10 +9,5 @@ public class EndScene : MonoBehaviour
     {
         Destroy(GameObject.Find("Player").gameObject);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

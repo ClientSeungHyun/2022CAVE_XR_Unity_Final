@@ -33,6 +33,9 @@ public class GamaManager : MonoBehaviour
         monsterController = Monster.GetComponent<MonsterController>();
         Player = GameObject.Find("Player");
 
+        Screen.SetResolution(640, 360, true);
+        Application.targetFrameRate = 60;
+
         DontDestroyOnLoad(this);
     }
 

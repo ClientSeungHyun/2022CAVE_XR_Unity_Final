@@ -13,11 +13,6 @@ public class FadeOutScr : MonoBehaviour
         OFade = CenterEyeObj.transform.GetComponent<OVRScreenFade>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void fadeOut()
     {
         OFade.FadeOut();

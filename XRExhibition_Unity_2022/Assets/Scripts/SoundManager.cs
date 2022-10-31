@@ -50,9 +50,13 @@ public class SoundManager : MonoBehaviour
             soundSource.clip = BGMList[0];
         }
 
-        if (!soundSource.isPlaying)
+        if (!soundSource.isPlaying && !(soundSource.volume <=0))
         {
             soundSource.Play();
+        }
+        else
+        {
+            soundSource.Pause();
         }
     }
 
